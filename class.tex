@@ -191,6 +191,9 @@ operators of dimension five within the Standard Model.
 %
 \section{Introduction}
 
+	Violation of Lorentz invariance has more often become one of the
+	ingredients or properties of low energy effective models.
+	
 	Quite customary theoretical and phenomenological reviews on
 %	Every now and then theoretical and phenomenological reviews on 
 	Lorentz violation use effective higher dimensional operators coupled 
@@ -326,6 +329,10 @@ operators of dimension five within the Standard Model.
 %	photon sector.
 
 \subsection{Purely Gauge Operators in QED}
+
+	Should say that the method of irreducible tensors when applied directly 
+	is too bulky here, and it's easier to just write out all imaginable 
+	gauge invariant structures.
 
 	What are the structures of the mass dimension five 
 	constructed out of the
@@ -1416,7 +1423,7 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	equations similarly to what we have done in QED.
 	Most of the interactions contain the Higgs field and at low
 	energies only induce effectively higher-dimensional structures,
-	and a such are not very appealing from the phenomenological point of
+	and as such are not very appealing from the phenomenological point of
 	view.
 	Instead we have only concentrated on the rank three absolutely
 	symmetric operators $ C_X^{\mu\nu\rho} $ 
@@ -1440,23 +1447,38 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Phenomenological Discussion}
 	
-	Here we review the existing phenomenological constraints on 
-	LV operators which are applicable to the operators listed in the
-	previous section.
+	Given the abundance of non-minimal interactions we have derived in 
+	the last section it would be no wonder that most of them if not all
+	are severely constrained by experiment.
+	We now discuss typical limits on these operators 
+	which can be inferred from already familiar experimental data
+	on Lorentz violation.
+%	Here we review the existing phenomenological constraints on 
+%	LV operators which are applicable to the operators listed in the
+%	previous section.
 	Most of the constraints arrive from laboratory experiments
 	or astrophysical observations at the energy scales much lower
 	than the EW symmetry scale. 
-	The Higgs boson and weak bosons decouple 
-	at these scales effectively yielding operators of higher mass
-	dimensions which we are not considering here.
-	We therefore omit any operators which include the Higgs field or
-	the weak bosons. 
+	The Higgs boson and weak bosons do not propagate 
+	at these scales and can be integrated out, effectively yielding operators of 
+	higher mass dimensions which we are not considering here.
+%	We therefore omit any operators which include the Higgs field or
+%	the weak bosons. 
+	One should keep in mind, however, that quite generally the EW-scale operators 
+	mix to the quark LV operators (which do propagate into the low-energy
+	physics) via the renormalization group equations. 
+	Therefore, the bounds discussed below in principle can be lifted to the 
+	interactions involving Higgs and weak bosons. 
+	We, however, do not go that deeply into discussion of the renormalization
+	group equations and from now on leave the trans-weak scale dimension five 
+	operators aside.
+	
+
 	Although the actual scale of experiments is somewhat lower,
 	we write the reference low energy Lagrangian at the scale of
 	around $ 1~\GeV $, such that the quark description of matter is 
 	still applicable.
-
-	At this cale we can ignore the chirality of the particles, break the
+	At this scale we can ignore the chirality of the particles, break the
 	$ \sul $ doublets and combine the left and right particles into
 	full Dirac spinors. 
 	The number of operators stays the same, as we now can introduce
@@ -1465,12 +1487,92 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	We also pass to the mass basis of the flavor matrices to facilitate
 	decoupling of heavy quarks (the flavor matrix elements corresponding
 	to heavy flavors are considered to be zero):
+%%
+%% Gauge --> Mass basis
+\begin{align}
+\label{gauge_mass_basis}
+% first line
+\notag
+	c_Q^\mu,\  c_u^\mu  & ~~\rightarrow~~ c_{u\phantom{,5}}^\mu 
+				\Bigl|_{\rm below\ EW}  ~=~ \frac{1}{2} 
+			\left\lgroup W^\mu_u\, c_u^\mu\, W_u ~+~ U_u^\dag\, c_Q^\mu\, U_u 
+						\right\rgroup
+	\\
+% second line
+	&
+	~~\rightarrow~~ c_{u,5}^\mu 
+			\Bigl|_{\rm below\ EW}  ~=~ \frac{1}{2} 
+			\left\lgroup W^\mu_u\, c_u^\mu\, W_u ~-~ U_u^\dag\, c_Q^\mu\, U_u 
+						\right\rgroup
+	\\
+% third line
+\notag
+	& \dots\dots
+	\\
+% fourth line
+\notag
+	& 
+	\hspace{-1.0cm}
+	u_L ~~\rightarrow~~ U_u\, u_L\,,   \qquad u_R ~~\rightarrow~~ W_u\, u_R\,, \qquad 
+	d_L ~~\rightarrow~~ U_d\, d_L\,,   \qquad d_R ~~\rightarrow~~ W_d\, d_R~.
+\end{align}
+
+	We revoke our assumption of the effectiveness of LV interactions 
+	which we are running down below the EW scale.
+	For such a theory to stay consistent, one has to get convinced that
+	there are no uncontrollable divergencies.
+	We therefore need to filter out divergent operators from our consideration,
+	since for them the relations \eqref{gauge_mass_basis} would have no
+	meaning.
+
+	Using CPT-properties it is easy to realize that the dangerous operators
+	in Eqs. \eqref{SM_quark} and \eqref{SM_lepton} are the ones coupled to
+	the dual fieldstrengths
+%%
+%% dangerous LV operators
+\begin{align}
+\notag
+	\mathcal{L}_{\rm SM}^{\rm divgt} & ~~=~~
+	\wt{c}_{Q,1}^\mu \cdot
+	\ov{Q}\, \gamma^\lambda \wt{F}_{\mu\lambda}\, Q 
+	~~+~~
+	\wt{c}_{Q,3}^\mu \cdot
+	\ov{Q}\, \gamma^\lambda \wt{G}_{\mu\lambda}\, Q 
+	~~+~~
+	\wt{c}_{q,1}^\mu \cdot
+	\ov{q}\, \gamma^\lambda \wt{F}_{\mu\lambda}\, q
+	~~+~~ 
+	\wt{c}_{q,3}^\mu \cdot
+	\ov{u}\, \gamma^\lambda \wt{G}_{\mu\lambda}\, q
+	\\
+% second line
+	&
+	~~+~~ 
+	\wt{c}_{L,1}^\mu \cdot
+	\ov{L}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, L
+	~~+~~
+	\wt{c}_{\psi}^\mu \cdot
+	\ov{\psi}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, \psi
+	~,
+\end{align}
+	where we have abbreviated $ q = u, d $ and $ \psi = e, \nu $.
+	If we admit them to the theory, the Standard Model gauge group
+	allows them to induce dimension three operators enhanced by the
+	square of the momentum cut-off. 
+	Besides the conceptual difficulty of quadratically-divergent terms,
+	they fall under severe constraints on the existing dimension three
+	interactions
 \[
-\text{\bf Gauge $\rightarrow$ Mass basis}.
+	| b^\mu | ~=~ \Lambda^2 | \wt{c}^\mu |  ~\lesssim~ 10^{-29}~{\rm GeV}~.
 \]
+	Even in the mildest UV scenario, {\it e.g.} $ \Lambda = \Lambda_{\rm SUSY} $,
+	this limit would exhibit strongly unnatural hierarchy between the interactions
+	\eqref{SM_quark}, \eqref{SM_lepton}. 
 	
-	In all, denoting $ q = u, d $, at the scale of $ 1~\GeV $ we 
-	have the following LV interactions:
+	Leaving ourselves only with UV-safe operators, 
+%	In all, denoting $ q = u, d $, 
+	at the scale of $ 1~\GeV $ we 
+	have the following effective interactions in the quark sector:
 %%
 %% the quark matter LV sector of the Standard Model below the EW scale
 \begin{align}
@@ -1487,38 +1589,15 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	~~+~~
 	c_{q,5}^\mu \cdot
 	\ov{q}\, \gamma^\lambda \gamma^5 F_{\mu\lambda}\, q 
-	~~+
-	\\
-% third line
-\notag
-	&
-	+~~
-	\wt{c}_{q}^\mu \cdot
-	\ov{q}\, \gamma^\lambda \wt{F}_{\mu\lambda}\, q 
 	~~+~~
-	\wt{c}_{q,5}^\mu \cdot
-	\ov{q}\, \gamma^\lambda\gamma^5 \wt{F}_{\mu\lambda}\, q 
-	~~+~~
-	\wt{c}_{qg}^\mu \cdot
-	\ov{q}\, \gamma^\lambda \wt{G}_{\mu\lambda}\, q 
-	~~+~~
-	\wt{c}_{qg,5}^\mu \cdot
-	\ov{q}\, \gamma^\lambda\gamma^5 \wt{G}_{\mu\lambda}\, q 
-	~~+
-	\\
-% fourth line
-\label{SM_quark_1GeV}
-	&
-	+~~
 	C_q^{\mu\nu\rho} \cdot
 	\ov{q}\, \gamma_{(\mu} \md_\nu \md_{\rho)}\, q
 	~~+~~
 	C_{q,5}^{\mu\nu\rho} \cdot
 	\ov{q}\, \gamma_{(\mu} \md_\nu \md_{\rho)}\gamma^5\, q
-	~~+
 	\\
 % fifth line
-\nonumber
+\label{SM_quark_1GeV}
 	&
 	+~~
 	D_{q}^{\mu\nu\rho} \cdot
@@ -1526,7 +1605,6 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	~~+~~
 	D_{q,5}^{\mu\nu\rho} \cdot
 	\ov{q}\, \gamma_{(\mu} F_{\rho)\nu}\gamma^5\, q
-	~~+
 	\\
 % sixth line
 \nonumber
@@ -1539,14 +1617,13 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	\ov{q}\, \gamma_{(\mu} G_{\rho)\nu}\gamma^5\, q
 	~,
 \end{align}
-
-	and similarly for leptons, $ \psi = e, \nu $:
+	and similarly in the lepton sector:
 %%
 %% the lepton matter LV sector of the Standard Model below the EW scale
 \begin{align}
 % first line
 \nonumber
-	\mathcal{L}_{\rm SM}^{\rm lepton} = \hspace{-2.0cm}&
+	\mathcal{L}_{\rm SM\ 1~GeV}^{\rm lepton} = \hspace{-2.0cm}&
 	\\
 % second line
 \nonumber
@@ -1558,16 +1635,6 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	c_{l,5}^\mu \cdot
 	\ov{\psi}\, \gamma^{\lambda}\gamma^5 F_{\mu\lambda}\, \psi
 	~~+~~
-	\wt{c}_{l}^\mu \cdot
-	\ov{\psi}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, \psi
-	~~+~~
-	\wt{c}_{l,5}^\mu \cdot
-	\ov{\psi}\, \gamma^{\lambda}\gamma^5 \wt{F}_{\mu\lambda}\, \psi
-	\\
-% third line
-\nonumber
-	&
-	+~~
 	C_l^{\mu\nu\rho} \cdot
 	\ov{\psi}\, \gamma_{(\mu} \md_\nu \md_{\rho)}\, \psi
 	~~+~~
@@ -1586,16 +1653,13 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	~.
 \end{align}
 
-
-	{\it [Some phenomenological constraints now for these operators]}.
-
 	Passing to the gauge sector, we refer to Eq. \eqref{SM_gauge}.
 	As before, we ignore the weak boson part, $ C_{\sul}^{\mu\nu\rho} $.
 	Thus at low energies the LV lagrangian in the gauge sector
 	takes the form
 \begin{equation}
 \label{SM_gauge_1GeV}
-	\mathcal{L}_{\rm SM}^{\rm gauge} = 
+	\mathcal{L}_{\rm SM\ 1~GeV}^{\rm gauge} ~~=~~
 	C^{\mu\nu\rho} \cdot 
 	F_{\mu\lambda}\, \partial_\nu\, \wt{F}_\rho^{\phantom{\rho}\lambda}
 	~~+~~
@@ -1614,18 +1678,79 @@ $ C^{\mu\nu\rho} $
 		C^{\mu\nu\rho}_{\sul}\Bigr|_{M_W} \sin^2 \theta_W~.
 \]
 	Although we have included the gluon operator $ C_{\suc}^{\mu\nu\rho} $
-	into \eqref{SM_gauge_1GeV} for completeness, one should keep in mind
-	that it does not lead to observable consequences at the level
-	of accuracy that we are pursuing.
-
+	into \eqref{SM_gauge_1GeV}, we note 
+	that it is not directly observable and we left it only for completeness.
+%	that it does not lead to observable consequences at the level
+%	of accuracy that we are pursuing.
 	In contrast, the photon operator $ C^{\mu\nu\rho} $ causes a
 	cubic modification of the dispersion relations for the photon.
-	This effect has been  studied and constrained very well [{\it refs}], 
-	and relevant limits for this operator can be extracted from, 
-	{\it e.g.} ref. [{\it Myers,Pospelov}].
+%	This effect has been  studied and constrained very well [{\it refs}], 
+%	and relevant limits for this operator can be extracted from, 
+%	{\it e.g.} ref. [{\it Myers,Pospelov}].
 
-	{\it [Some limits here.]}
 
+	Thus, phenomenologically, the interactions in \eqref{SM_quark_1GeV}-\eqref{SM_gauge_1GeV} 
+	can be divided into two groups.
+	The first group is formed by the operators which modify dispersion relations
+	and grow with energy, the second group, correspondingly, hosts all other
+	structures, which we designate as ``soft'' LV interactions.
+	
+	Operators growing with energy, which we can call ``kinematic'' operators,
+	as they lead to modifications of thresholds of various reactions, are 
+	known to be severely constrained by the
+	observations of high energy cosmic rays [{\it Gagnon, Moore}].
+	These constraints are an exception to our consideration of the low energy 
+	effective lagrangian, since the cosmic rays are believed to have the
+	energies of $ \sim 10^{11} $~GeV.
+	Combined with the renormalization group mixing
+	(see Appendix \ref{RG_SM}), one can extend
+	the limits onto the kinematic operators in all sectors of the Standard Model.
+	
+
+	The bounds on the soft operators possess a hierarchy in the 
+	intrinsic energy scales of the effects where can be probed for.
+	The strongest limits occur when the operator induces the interaction 
+	of nuclear spin with the nuclear electric field, typical scale of which
+	is $ \sim (100~{\rm MeV})^2 $.
+	Known limits on such interactions allow one to estimate the operators $ c^\mu_{q,5} $, 
+	$ D^{\mu\nu\rho}_q $, $ D^{\mu\nu\rho}_{q,5} $ as
+	[{\it Bolokhov,Nibbelink,Pospelov}]:
+\begin{equation}
+\label{nucl_spin}
+	|c^\mu_{q,5}|,~~ |D^{\mu\nu\rho}_{q,5}| ~~\lesssim~~~
+	10^{-28}~{\rm GeV}^{-1}~.
+\end{equation}
+	The current couplings $ c_q^\mu $, $ D^{\mu\nu\rho}_q $  when averaged over the nucleon, 
+	will produce an interaction of the nucleus with the external electromagnetic field.
+	The same kind of interaction appears after averaging the tensor operators
+	involving gluons $ D^{\mu\nu\rho}_{qg} $, where the effective coupling will be
+	proportional to $ \alpha_{\rm S} $ [{\it Manohar, Georgi, 1984, NPB234}]. 
+	However, the electromagnetic field which hypothetically can be created in the laboratory
+	is much weaker than a typical nuclear field.
+	For, a laboratory wind-up of $ |\vec{E}{}_{\rm ext}| \sim $ 10~kV/cm 
+	$ \hookrightarrow 1~{\rm eV}^2 $, and 
+	$ |\vec{E}{}_{\rm nucl}| \sim \Lambda_{\rm hadr}^2 $
+	one loses in stringency about sixteen orders of magnitude to \eqref{nucl_spin}.
+	
+	The interactions $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ and
+	$ D^{\mu\nu\rho}_{qg,5} $ can be shown to exhibit EDM-like signatures
+	[{\it Bolokhov, Pospelov, Romalis}].
+	When averaged over a nucleon they create a CPT-odd coupling of the external electric 
+	field and the nuclear spin. 
+	Electron operators $ c_{l,5}^\mu $ and $ D_{l,5}^{\mu\nu\rho} $ similarly induce
+	EDMs in paramagnetic atoms. 
+	Current limits on atomic and nuclear EDMs allow one to bound these interactions
+	at the $ \sim 10^{-25}~e{\rm cm} $ $ \sim 10^{-13}~{\rm GeV}^{-1} $ level.
+	
+	
+
+
+	Although direct measurements and observations do not involve the neutrino sector,
+	we speculate that the limits applicable to the electron can be extended to
+	the whole lepton sector owing to the intertwining of the operators caused by
+	renormalization (see Appendix \ref{RG_SM}).
+	
+	
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2093,6 +2218,15 @@ $ C^{\mu\nu\rho} $
 %	mass basis operators via a unitary transformation.
 %	Lastly, below the EW breaking scale there is evidently no Higgs sector.
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   YOUNG TABLEAUX AND IRREDUCIBLE TENSORS OF THE LORENTZ GROUP
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Young tableaux and irreducible tensors of the Lorentz group}
 
