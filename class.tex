@@ -191,16 +191,47 @@ operators of dimension five within the Standard Model.
 %
 \section{Introduction}
 
-	Violation of Lorentz invariance has more often become one of the
-	ingredients or properties of low energy effective models.
+%	Violation of Lorentz invariance has more often become one of the
+%	ingredients or properties of low energy effective models.
 	
-	Quite customary theoretical and phenomenological reviews on
+	Although the ideas of breaking Lorentz invariance appeared
+	long ago [], nowadays the movements in this direction are
+	stimulated by advances in experimental techniques which can
+	probe for this symmetry.
+	From the other direction come highly fashioned models [loopgr,
+	strings,non-comm] of 
+	fundamental interactions which predict that violation of 
+	Lorentz invariance might take place at low energies.
+	From aesthetical point of view the possibility of spontaneous
+	breaking of Lorentz invariance seems the most attractive, 
+	and a lot of investigations have been done in this
+	area, however, a satisfactory mechanism for SBLS has not
+	been found. 
+
+	One can still work in the effective theory, where the
+	breaking of Lorentz invariance is explicit.
+	Quite customary theoretical and phenomenological endevours on
 %	Every now and then theoretical and phenomenological reviews on 
-	Lorentz violation use effective higher dimensional operators coupled 
-	to background tensors to break Lorentz invariance.
+	Lorentz violation use effective 
+% higher dimensional 
+	low energy operators coupled to background tensors to break 
+	Lorentz invariance.
 	Most developments consider only a sufficiently limited set
 	of such operators, the most popular of which are the dimension three
 	Chern-Simons term and the minimal coupling fermionic current operator. 
+	Among tensor operators, most frequently one would encounter 
+	those originating from non-commutative field theories, where the
+	natural breaking ingredient is the parameter of non-commutativity
+	$ \theta^{\mu\nu} $.
+	Indeed, at the level of three- and four-dimensional interactions,
+	there are not too many tensor structures which can be included
+	in the effective lagrangian.	
+
+	That is not so at the mass dimension five level.
+	Modern reviews occasionally include some dimension five structures
+	and investigate the properties of the resulting model.
+	However, the number of admissible LV interactions grows with their
+	mass dimension.
 	A natural problem of reviewing all imaginable LV interactions
 	emerges, since {\it a priori} one has no selection rule (or right) to 
 	deliberately narrow the interaction spectrum of an effective theory.
@@ -208,13 +239,19 @@ operators of dimension five within the Standard Model.
 	dimension three and four, but the domain of dimension five structures has
 	been covered only partly. 
 	While the supersymmetric Standard Model (MSSM) has been shown to,
-	owing to the extended symmetry, possess a sufficiently small set of 
-	admissible structures [{\it ref}], the Standard Model itself has not 
+	owing to a stronger symmetry, possess a sufficiently small set of 
+	admissible structures [{\it ref}] (and we believe that most of the
+	popular UV extensions do so), the Standard Model itself has not 
 	been explored in a similar thorough manner.
+	
 
-	Our goal here is to write down a generic LV theory with mass dimension
-	five operators, compatible with the Standard Model and classify
+	Our goal is to write down a generic LV theory with mass dimension
+	five operators, compatible with the Standard Model and to classify
 	the inherent LV operators. 
+	The problem of constraining the parameters of such a theory, although
+	seems important, remains out of the main line of our work, given
+	that already a number of highly-competitive bounds were obtained
+	within recent years [].
 %	We are not pursuing the goal of putting constraints on these interactions,
 %	as there are already severe limits [{\it ref}] which essentially exclude
 %	LV at dimension five level.
@@ -238,12 +275,12 @@ operators of dimension five within the Standard Model.
 	tensor structures compatible with the gauge symmetries of the SM.
 	With this in mind, we do not hunt for new phenomena which may help
 	restrict the magnitude of these interactions. 
-	As a matter of fact, one finds a strikingly broad facilitation of 
+	As a matter of fact, one can find a strikingly broad facilitation of 
 	LV operators for searching for new effects ---
 	starting from Quantum mechanical phenomena, nuclear, high energy physics,
 	astrophysical effects and reaching towards cosmology and gravity
 	[{\it lots of refs}].
-	The broader set of interactions introduced here is expected to 
+	The broader set of interactions introduced here may be expected to 
 	produce more investigations and phenomenological applications in the area of
 	Lorentz violation, which, however, are outside the scope of this paper. 
 
@@ -262,6 +299,7 @@ operators of dimension five within the Standard Model.
 %	requiring that every tensor LV operator must be an irreducible tensor
 %	of the corresponding rank --- later on it will be clear why it is
 %	important.
+
 	In total, our conditions look as follows: 
 	an LV operator of specific dimension must be
 \begin{itemize}
@@ -273,19 +311,61 @@ operators of dimension five within the Standard Model.
 	\item coupled to an irreducible background tensor.
 \end{itemize}
 
+	A straightforward method for building tensor LV interactions is using Young
+	tableaux to compose tensor structures (see Appendix \ref{young}).
+	The key ingredients in this approach are the components which carry 
+	Lorentz indices --- derivatives, gamma-matrices, etc.
+	The main advantage is that the interactions obtained in this way are
+	Lorentz-irreducible by construction.
+	The irreducibility plays an important multi-faced role. 
+	First, one ensures that the operators in a given sector are independent
+	from each other.
+	In particular, higher-rank interactions are independent of the lower-rank
+	ones.
+	They are also gurranteed to be independent within the set of tensors of the
+	same rank.
+	Quantum corrections change this situation, but still, as we will see 
+	in the case of QED, the choice of irreducible structures is the best guess 
+	for operators forming an orthogonal basis under the renormalization group.
+	And finally, most irreducible operators are protected from developing
+	quadratic divergencies and with them severe naturalness problems,
+	which are catalyzed by strong limits on lower-dimensional interactions.
+
 	Our survey starts with consideration of Quantum Electrodynamics, 
 	which as we show possesses a rich structure of LV interactions.
-	In the Standard Model, chirality restricts the number of types
-	of interactions, however, the abundance of field content makes
-	possible for more diverse structures.
-	We comment on the phenomenological constraints for the LV 
-	content of the Standard Model.
-	We show how the one-loop renormalization mixes operators in QED
-	and derive the RG equations for the interactions in the Standard
-	Model which modify the dispersion relations.
-	In the Appendix we present a method to construct 
-	irreducible tensors of the Lorentz group which we intesively
-	exploit in the derivation of the LV lagrangians.
+	Although QED is definitely not the most fashionable theory nowadays,
+	the main features of LV lagrangians are the easiest to study within it.
+	Furthermore, in the aspect of LV effects, QED is still one of the
+	most popular testing grounds [].
+	It also allows us to make the transition to the Standard Model more
+	smooth. 
+	We develop 1-loop RG equations for the LV interactions in QED.
+	As we will see, this will prove the efficiency of using irreducible
+	operators.
+	On this example we show how parity arguments allow one to additionally 
+	separate operators undergoing RG mixing.
+	Such an analysis in the Standard Model may be highly useful for 
+	phenomenological purposes, but due to the complicated structure of
+	interactions, we only concentrate on the example of operators which
+	modify dispersion relations.
+	As compard to QED, in the Standard Model chirality restricts the number of types
+	of interactions. 
+	However, the abundance of field content makes possible for more diverse 
+	structures and links between them.
+	At the end, we dwell on phenomenological limits which can be put
+	on the LV Standard Model. 
+	Although the constraints are normally only available in the most
+	accessible sectors, we anticipate that renormalization group mixing
+	enables one to translate them onto the other, less accessible sectors.
+	
+%	We comment on the phenomenological constraints for the LV 
+%	content of the Standard Model.
+%	We show how the one-loop renormalization mixes operators in QED
+%	and derive the RG equations for the interactions in the Standard
+%	Model which modify the dispersion relations.
+%	In the Appendix we present a method to construct 
+%	irreducible tensors of the Lorentz group which we intesively
+%	exploit in the derivation of the LV lagrangians.
 	
 
 \section{Dimension V Operators in QED}
@@ -2229,6 +2309,7 @@ $ C^{\mu\nu\rho} $
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Young tableaux and irreducible tensors of the Lorentz group}
+\label{young}
 
 	To build irreducible tensors of an arbitrary rank one can use
 	Young tableaux. 
