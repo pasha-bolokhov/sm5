@@ -419,7 +419,7 @@ operators of dimension five within the Standard Model.
 	Between the two choices of direct enumeration of any possible structures
 	and of building irreducible operators via Young tableaux in the gauge sector 
 	we inclide towards the former.
-	We can easily walk through all gauge invariant operators and ensure that
+	One can easily walk through all gauge invariant operators and ensure that
 	they are traceless.
 	On the other hand, Young tableaux appear to be less useful in this particular
 	sector.
@@ -490,10 +490,10 @@ $ F^{\mu\nu} \partial^\lambda F^{\rho\sigma} $,
 	the tensor $ C^{\mu\nu\rho} $ follow from the requirement of
 	independence of this operator of the lower-rank operators
 	of \eqref{generic_gauge}, which are reducible on the equations
-	of motion.
-	Even if they were good operators not reducible on the EOM, 
+	of motion
+	(even if they were good operators not reducible on the EOM, 
 	one still would prefer the 3-rank operator to be completely independent
-	of them.
+	of them).
 	In order to achieve that, one subtracts from 
 $ F_{\mu\lambda} \p_\nu \wt{F}_\rho^{\phantom{\rho}\lambda} $
 	all its possible traces, effectively leading to the statement
@@ -577,7 +577,8 @@ $ F^{\mu\nu} \partial^\lambda F^{\rho\sigma} $,
 
 	In contrast to what we have seen in the gauge sector, 
 	the matter sector of QED is much
-	richer than the set of structures presented in [{\it Myers, Pospelov}].
+	richer.
+%than the set of structures presented in [{\it Myers, Pospelov}].
 	The reason for that is that the operators can be formed both
 	by using covariant derivatives $ \cal{D}_\mu $ and by 
 	inserting gamma matrices.
@@ -809,12 +810,12 @@ $	E_1^{\mu\nu\rho\lambda}\cdot
 	we need to ensure that the latter is free of quadratic divergencies.
 	It is obvious that quadratically divergent operators must necessarily
 	couple to a vector background, as there are no dimension
-	three structures which would be CPT-odd and be contracted with a tensor
+	three structures which would be CPT-odd and contracted with a tensor
 	background simultaneously. 
 	In our list \eqref{QED_matter} only the $ \wt{c}_1^\mu $ term is
 	quadratically divergent, so we manually exclude this operator
 	to make the theory consistent.
-	We still formally include it in the one-loop RG equations below.
+%	We still formally include it in the one-loop RG equations below.
 %%
 %% The RG equations for the LV QED
 \begin{align*}
@@ -888,7 +889,7 @@ $	E_1^{\mu\nu\rho\lambda}\cdot
 		(E_2)_{(\varphi\lambda)(\chi\xi)}
 	~.
 \end{align*}	
-	Here we introduced $ \wt{f}{}_{1,2}^{\mu\nu} \,\equiv\, \frac{1}{2} 
+	Here we have introduced $ \wt{f}{}_{1,2}^{\mu\nu} \,\equiv\, \frac{1}{2} 
 		\epsilon^{\mu\nu\rho\sigma} (f_{1,2})_{\rho\sigma} $.
 	As anticipated, most operators renormalize independently.
 	It is also clear that one can easily form such linear combinations
@@ -1670,6 +1671,7 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 %%
 %% dangerous LV operators
 \begin{align}
+\label{SM_divgt}
 \notag
 	\mathcal{L}_{\rm SM}^{\rm divgt} & ~~=~~
 	\wt{c}_{Q,1}^\mu \cdot
@@ -1696,10 +1698,10 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 \end{align}
 	where we have abbreviated $ q = u, d $ and $ \psi = e, \nu $.
 	If we admit them to the theory, the Standard Model gauge group
-	allows them to induce dimension three operators enhanced by the
+	would allow them to induce dimension three operators enhanced by the
 	square of the momentum cut-off. 
 	Besides the conceptual difficulty of quadratically-divergent terms,
-	they fall under severe constraints on the existing dimension three
+	they fall under severe constraints on dimension three
 	interactions
 \[
 	| b^\mu | ~=~ \Lambda^2 | \wt{c}^\mu |  ~\lesssim~ 10^{-29}~{\rm GeV}~.
@@ -1807,7 +1809,7 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	G_{\mu\lambda}\, \mathcal{D}_\nu\, \wt{G}_\rho^{\phantom{\rho}\lambda}
 	~.
 \end{equation}
-	The electromagnetic operator
+	Here, the electromagnetic operator
 $ C^{\mu\nu\rho} $
 	can be thought of emerging as a linear combination of the 
 	tensors from the $ \ue $ and $ \sul $ sectors:
@@ -1829,10 +1831,12 @@ $ C^{\mu\nu\rho} $
 
 
 	Thus, phenomenologically, the interactions in \eqref{SM_quark_1GeV}-\eqref{SM_gauge_1GeV} 
-	can be divided into two groups (see Table \ref{constr_table}).
+	can be divided into two groups.
 	The first group is formed by the operators which modify dispersion relations
-	and grow with energy, the second group, correspondingly, hosts all other
-	structures, which we designate as ``soft'' LV interactions.
+	and grow with energy. 
+	The second group, correspondingly, hosts all other
+	structures, which we designate as ``soft'' LV interactions  
+	(see Table \ref{constr_table}).
 
 %%
 %% the table of typical phenomenological constraints on the operators
@@ -1900,7 +1904,7 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	The same kind of interaction appears after averaging the tensor operators
 	involving gluons $ D^{\mu\nu\rho}_{qg} $, where the effective coupling will be
 	proportional to $ \alpha_{\rm S} $ [{\it Manohar, Georgi, 1984, NPB234}]. 
-	However, any conceivable electromagnetic field which can be created in the laboratory
+	However, any conceivable electromagnetic field which can be created in laboratory
 	is much weaker than a typical nuclear field.
 	For, a laboratory wind-up of $ |\vec{E}{}_{\rm ext}| \sim $ 10~kV/cm 
 	$ \hookrightarrow 1~{\rm eV}^2 $, and 
@@ -1924,17 +1928,19 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	the whole lepton sector owing to the intertwining of the operators caused by
 	renormalization (see Appendix \ref{RG_SM}).
 
-	We finally make a remark that our considerations here certainly excluded such 
+	We remark again that our considerations here certainly excluded such 
 	operators as $ \ov{\psi}\,\wt{F}^{\mu\nu}\gamma_\mu [\gamma^5] \psi $,
-	since in the Standard Model they are not protected from quadratic divergencies.
+	since in the Standard Model they are unprotected from quadratic divergencies
+	(see Eq.\eqref{SM_divgt}).
 	We build our model at a high ultraviolate scale, and such divergencies
-	bring consistency problems into the theory.
-	In particular, we assume our GeV-scale interactions to be expressed in terms
+	would bring consistency problems into the theory.
+	In particular, we assumed our GeV-scale interactions to be expressed in terms
 	of linear combinations of trans-weak operators via a smooth logarithmic
-	RG flow.
+	RG flow, which clearly stands in conflict with the presence of quadratic
+	divergencies.
 	One can still think of these problems as model-dependent.
 	In a different onset, where one is not worried about quadratic divergencies,
-	(to say, if UV scale of the effective theory is appreciably low)
+	(to say, if the UV cut-off scale of the effective theory is appreciably low)
 	such operators may still be bearable,
 	and one could wonder about their experimental signatures.
 	In particular, the structure 
@@ -1958,7 +1964,7 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 \section{Conclusion}
 	We have presented an example of a generic Lorentz-violating 
 	extension of a theory. 
-	It has been shown that in QED admits a plenty of interactions,
+	It has been shown that QED admits a plenty of interactions,
 	parametrized by background vectors and tensors.
 	Exploration of some of the operators was done earlier
 	[{\it Myers,Pospelov}].
@@ -1968,7 +1974,8 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	Other interactions are examples of non-minimal couplings which can
 	be searched for in experiments.
 	Obtaining the law of RG evolution of these operators is a useful step in a 
-	phenomenological investigation of such theories.
+	phenomenological investigation.
+% of such theories.
 	We show that the method of irreducible tensors, which itself is a systematic
 	tool for building a theory, appears useful for these purposes too.
 
@@ -1977,25 +1984,36 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	The wider gauge group, and the diversity of field content lead
 	to a sufficiently broader set of LV structures, although the gauge
 	sector still keeps its simplicity.
-	The field content essentially decreases below the EW scale,
-	and so does the LV content.
+	The field content essentially reduces below the EW scale,
+	and so does the spectrum of LV operators.
 	Imposing a constraint of absence of uncontrollable divergencies,
-	one obtains a theory with a narrower set of LV terms, which 
+	one obtains a consistent effective theory with a narrower set of LV terms, which 
 	can be bounded by observations.
 	We show typical limits that can be placed on the magnitude of these
 	interactions.
-	Other operators can be bounded by involving RG mixing arguments.
+%	Other operators can be bounded by involving RG mixing arguments.
+	Although some operators seem to escape direct constraints, the RG
+	flow is expected to spread the limits over all the interactions.
+	We can hardly see it possible for some interactions to outstand in magnitude 
+	with respect to other and yet not to induce observable effects at low
+	energy. 
+	Given the strength of typical constraints we pick up the natural 
+	conclusion that Lorentz violation at dimension five level in the Standard
+	Model is excluded by observations.
 
 	Although the Standard Model is now out of fashion, we observe that 
 	the spectrum of LV interactions is one of the widest.
-	At the same time, analysis of the LV operators in the
-	Standard Model is directly related to observations and
-	experimental constraints.
-	In the inverse direction, in more abstract theories, one expects
-	that any extension of the Standard Model, should it possess
-	LV properties, in the low energy regime will always be described
-	by some of the operators we have built.
-
+	At the same time, due to experimental accessibility of the
+	former, analysis of the LV operators in the
+	Standard Model is directly related to observational constraints.
+%	Reversely, in more abstract theories, we can expect
+%	that any extension of the Standard Model, should it possess
+%	LV properties, in the low energy regime will always be described
+%	by some of the operators we have built.
+	Reversely, in more abstract theories with Lorentz violation, 
+	if they appeal for phenomenological
+	viability, we can expect that the LV behavior in the low energy regime will 
+	always be described by some of the operators we have built.
 
 
 \newpage
