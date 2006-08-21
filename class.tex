@@ -31,11 +31,14 @@
 \newcommand{\ov}{\overline}
 \newcommand{\md}{\mathcal{D}}
 
-\newcommand{\suc}{{\rm SU}_{\rm C}(3)}
-\newcommand{\sul}{{\rm SU}_{\rm L}(2)}
-\newcommand{\ue}{{\rm U}(1)}
+\newcommand{\suc}{{{\rm SU}_{\rm C}(3)}}
+\newcommand{\sul}{{{\rm SU}_{\rm L}(2)}}
+\newcommand{\ue}{{{\rm U}(1)}}
 \newcommand{\GeV}{{\rm GeV}}
+\newcommand{\uflavor}{\mathbf{1}_{\rm flavor}}
 %\newcommand{\su3}{{\rm SU}_{\rm C}(3)}
+\newcommand{\lgr}{\left\lgroup}
+\newcommand{\rgr}{\right\rgroup}
 
 %\newcounter{dim5}
 %\setcounter{dim5}{5}
@@ -2213,7 +2216,214 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	{\it after ``below EW''}: even though some operators do not mix,
 	we still believe they do, due to the RGE {\it above} the EW scale.
 
+%%
+%% RG equations for fermionic operators above the EW scale
+%%
+\begin{align}
+%%%% C_L
+% first line
+\notag
+	\frac{d}{dt}\, 
+	C_L
+	&
+	~~=~~
+	\frac{25}{48\pi^2}
+	\left(
+		g'^2 Y_L^2  ~+~
+		g^2 T_W 
+	\right)\, C_L 
+	~~+~~
+	\frac{1}{32\pi^2} 
+		\left\{ \lambda_e\lambda_e^\dag\,,\, C_L \right\}
+	\\
+% second line
+\notag
+	&
+	~~+~~
+	\frac{5 g'^2}{48\pi^2}  Y_L^2\, C_\ue \cdot \uflavor
+	~~+~~
+	\frac{5 g^2}{48\pi^2} T_W\, C_\sul \cdot \uflavor
+	\\
+% third line
+\notag 
+	&
+	~~-~~
+	\frac{1}{96\pi^2} \lambda_e C_e \lambda_e^\dag 
+	~~-~~
+	\frac{1}{64\pi^2} \lambda_e \lambda_e^\dag \cdot \kappa
+	\\
+%%%% C_Q
+% fourth line
+\notag
+	\frac{d}{dt}\, 
+	C_Q
+	&
+	~~=~~
+	\frac{25}{48\pi^2}
+	\left(
+		g'^2 Y_Q^2 ~+~
+		g^2 T_W ~+~
+		g_3^2 T_S
+	\right)\,
+	C_Q
+	~~+~~
+	\frac{1}{32\pi^2} 
+	\left\{ \lambda_d \lambda_d^\dag ~+~
+		\lambda_u \lambda_u^\dag \,,\,
+		C_Q 
+	\right\}
+	\\
+% fifth line
+\notag
+	&
+	~~+~~
+	\frac{5 g'^2}{48\pi^2} Y_Q^2\, C_\ue \cdot \uflavor 
+	~~+~~ 
+	\frac{5 g^2}{48\pi^2} T_W\, C_\sul \cdot \uflavor 
+	~~+~~
+	\frac{5 g_3^2}{48\pi^2} T_S\, C_\suc \cdot \uflavor
+	\\
+% sixth line
+\notag
+	&
+	~~-~~
+	\frac{1}{96\pi^2}
+	\left( \lambda_d C_d \lambda_d^\dag ~+~
+		\lambda_u C_u \lambda_u^\dag 
+	\right)
+	~~-~~
+	\frac{1}{64\pi^2}
+	\left( \lambda_d \lambda_d^\dag ~-~
+		\lambda_u \lambda_u^\dag 
+	\right) \cdot
+	\kappa
+	\\
+% seventh line
+%%%% C_e
+\notag
+	\frac{d}{dt}\, 
+	C_e
+	&
+	~~=~~
+	\frac{25 g'^2}{48\pi^2} Y_e^2\, C_e
+	~~+~~
+	\frac{1}{16\pi^2} 
+	\left\{ \lambda_e^\dag \lambda_e \,,\,
+		C_e 
+	\right\}
+	\\
+% eighth line
+\notag
+	&
+	~~-~~
+	\frac{5 g'^2}{48\pi^2} Y_e^2\, C_\ue \cdot \uflavor
+	~~-~~
+	\frac{1}{48\pi^2} \lambda_e^\dag C_L \lambda_e
+	~~+~~
+	\frac{1}{32\pi^2} \lambda_e^\dag \lambda_e \cdot
+	\kappa
+	\\
+% nineth line
+%%%% C_u
+\notag
+	\frac{d}{dt}\, 
+	C_u
+	&
+	~~=~~
+	\frac{25}{48\pi^2} 
+	\left(
+	g'^2 Y_u^2 ~+~ g_3^2 T_S 
+	\right)\, C_u
+	~~+~~
+	\frac{1}{16\pi^2} 
+	\left\{ \lambda_u^\dag \lambda_u \,,\, C_u 
+	\right\}
+	\\
+% tenth line
+\notag
+	&
+	~~-~~
+	\frac{5 g'^2}{48\pi^2} Y_u^2\, C_\ue \cdot \uflavor
+	~~-~~
+	\frac{5 g_3^2}{48\pi^2} T_S\, C_\suc \cdot \uflavor 
+	\\
+% eleventh line
+\notag
+	&
+	~~-~~
+	\frac{1}{48\pi^2}
+	\lambda_u^\dag C_Q \lambda_u 
+	~~-~~
+	\frac{1}{32\pi^2}
+	\lambda_u^\dag \lambda_u \cdot
+	\kappa
+	\\
+% twelfth line
+%%%% C_d
+\notag
+	\frac{d}{dt}\, 
+	C_d
+	&
+	~~=~~
+	\frac{25}{48\pi^2} 
+	\left( g'^2 Y_d^2 ~+~ g_3^2 T_S 
+	\right)\, C_d
+	~~+~~
+	\frac{1}{16\pi^2} 
+	\left\{ \lambda_d^\dag \lambda_d \,,\, C_d 
+	\right\}
+	\\
+% thirteenth line
+\notag
+	&
+	~~-~~
+	\frac{5 g'^2}{48\pi^2} Y_d^2 \, C_\ue \cdot \uflavor
+	~~-~~
+	\frac{5 g_3^2}{48\pi^2} T_S \, C_\suc \cdot \uflavor
+	\\
+% forteenth line
+\notag
+	&
+	~~-~~
+	\frac{1}{48\pi^2} \lambda_d^\dag C_Q \lambda_d 
+	~~+~~
+	\frac{1}{32\pi^2} \lambda_d^\dag \lambda_d \cdot
+	\kappa
+\end{align}
 
+%%
+%% RG equations for bosonic operators above the EW scale
+%%
+\begin{multline}
+%%%% C_U(1)
+% first line
+\notag
+	\frac{d}{dt}\, 
+	C_\ue 
+	~~=~~
+	- \frac{g'^2}{48\pi^2}\,
+	{\rm tr} 
+	\lgr
+		Y_L^2\, C_L ~+~ N_S Y_Q^2\, C_Q ~-~
+		Y_e^2\, C_e ~-~ 
+		N_s Y_u^2\, C_u ~-~ N_S Y_d^2\, C_d
+	\rgr
+	\\
+% second line
+	~~+~~
+	\alpha_1 \, g'^2 \, C_\ue
+\end{multline}
+%%%% C_SU(2)
+\begin{equation*}
+	\frac{d}{dt}\, 
+	C_\sul 
+	~~=~~
+	
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
 \begin{align}
 % first line
 \notag
