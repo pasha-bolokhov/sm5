@@ -34,6 +34,7 @@
 \newcommand{\suc}{{{\rm SU}_{\rm C}(3)}}
 \newcommand{\sul}{{{\rm SU}_{\rm L}(2)}}
 \newcommand{\ue}{{{\rm U}(1)}}
+\newcommand{\el}{{\rm EM}}
 \newcommand{\GeV}{{\rm GeV}}
 \newcommand{\uflavor}{\mathbf{1}_{\rm flavor}}
 %\newcommand{\su3}{{\rm SU}_{\rm C}(3)}
@@ -2216,6 +2217,8 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	{\it after ``below EW''}: even though some operators do not mix,
 	we still believe they do, due to the RGE {\it above} the EW scale.
 
+	Here everywhere indices $ \mu\nu\rho $ are assumed.
+
 %%
 %% RG equations for fermionic operators above the EW scale
 %%
@@ -2501,6 +2504,145 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 		N_S\, \lambda_u\, C_u\, \lambda_u^\dag
 	\rgr
 \end{align}
+
+
+
+\section{RG equations for Dimension Five operators 
+%	RG equations for Dimension Five LV operators in the Standard Model
+	below the Electroweak symmetry breaking scale}
+%%
+%% RG equations for fermionic operators below the EW scale
+%%
+\begin{align}
+%%%% C_\nu
+% first line
+\notag
+	\frac{d}{dt}\, 
+	C_\nu
+	&
+	~~=~~
+	0
+	\\
+%%%% C_\nu,5
+% second line
+\notag
+	\frac{d}{dt}\, 
+	C_{\nu,5}
+	&
+	~~=~~
+	0
+	\\
+%%%% C_e
+% third line
+\notag
+	\frac{d}{dt}\, 
+	C_e
+	&
+	~~=~~
+	\frac{25 e^2}{48\pi^2}\,
+	C_e 
+	\\
+%%%% C_e,5
+% fourth line
+\notag
+	\frac{d}{dt}\, 
+	C_{e,5}
+	&
+	~~=~~
+	\frac{25 e^2}{48\pi^2}\,
+	C_{e,5}
+	~~+~~
+	\frac{5 e^2}{48\pi^2}\, C_\el \cdot \uflavor
+	\\
+%%%% C_u
+% fifth line
+\notag
+	\frac{d}{dt}\, 
+	C_u
+	&
+	~~=~~
+	\frac{25}{48\pi^2}
+	\left( q_u^2 e^2 ~+~ T_S g_3^2 \right)\,
+	C_u
+	\\
+%%%% C_u,5
+% sixth line
+\notag
+	\frac{d}{dt}\, 
+	C_{u,5}
+	&
+	~~=~~
+	\frac{25}{48\pi^2}
+	\left( q_u^2 e^2 ~+~ T_S g_3^2 \right)\,
+	C_{u,5}
+	~~+~~
+	\frac{5}{48\pi^2} \left( q_u^2 e^2\, C_\el ~+~ g_3^2 T_S\, C_\suc \right)
+	\cdot \uflavor
+	\\
+%%%% C_d
+% seventh line
+\notag
+	\frac{d}{dt}\, 
+	C_d
+	&
+	~~=~~
+	\frac{25}{48\pi^2}
+	\left( q_d^2 e^2 ~+~ T_S g_3^2 \right)\,
+	C_d
+	\\
+%%%% C_d,5
+% eighth line
+\notag
+	\frac{d}{dt}\, 
+	C_{d,5}
+	&
+	~~=~~
+	\frac{25}{48\pi^2}
+	\left( q_d^2 e^2 ~+~ T_S g_3^2 \right)\,
+	C_{d,5}
+	~~+~~
+	\frac{5}{48\pi^2} \left( q_d^2 e^2\, C_\el ~+~ g_3^2 T_S\, C_\suc \right)
+	\cdot \uflavor
+\end{align}
+
+	
+%%
+%% RG equations for bosonic operators below the EW scale
+%%
+\begin{align}
+%%%% C_EM
+% first line
+\notag
+	\frac{d}{dt}\, 
+	C_\el
+	&
+	~~=~~
+	\frac{e^2}{48\pi^2}\,
+	{\rm tr}
+	\lgr
+		C_{e,5} ~+~
+		N_S\, q_u^2 \, C_{u,5} ~+~
+		N_S\, q_d^2 \, C_{d,5}
+	\rgr
+	~~+~~
+	e^2 \,\alpha_\el \cdot C_\el
+	\\
+%%%% C_SU(3)
+% second line
+\notag
+	\frac{d}{dt}\, 
+	C_\suc
+	&
+	~~=~~
+	\frac{g_3^2}{96\pi^2}\, {\rm tr} \lgr C_{u,5} ~+~ C_{d,5} \rgr
+	~~+~~
+	\left(
+		\alpha_3  ~+~
+		\frac{7}{12\pi^2} N_S 
+	\right)g_3^2 \cdot
+	C_\suc
+\end{align}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
