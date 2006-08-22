@@ -2394,32 +2394,114 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 %%
 %% RG equations for bosonic operators above the EW scale
 %%
-\begin{multline}
+\begin{align}
 %%%% C_U(1)
 % first line
 \notag
 	\frac{d}{dt}\, 
 	C_\ue 
+	&
 	~~=~~
 	- \frac{g'^2}{48\pi^2}\,
 	{\rm tr} 
 	\lgr
 		Y_L^2\, C_L ~+~ N_S Y_Q^2\, C_Q ~-~
 		Y_e^2\, C_e ~-~ 
-		N_s Y_u^2\, C_u ~-~ N_S Y_d^2\, C_d
+		N_S Y_u^2\, C_u ~-~ N_S Y_d^2\, C_d
 	\rgr
 	\\
 % second line
+\notag
+	&
+	\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad
 	~~+~~
 	\alpha_1 \, g'^2 \, C_\ue
-\end{multline}
-%%%% C_SU(2)
-\begin{equation*}
+	\\
+% third line
+% C_SU(2)
+\notag
 	\frac{d}{dt}\, 
 	C_\sul 
+	&
 	~~=~~
-	
-\end{equation*}
+	- \frac{g^2}{192\pi^2} {\rm tr} \lgr C_L ~+~ N_S \, C_Q \rgr
+	~~+~~
+	\left(
+		\alpha_2 g^2 ~+~
+		\frac{7}{12\pi^2}N_W g^2 
+	\right) \cdot
+	C_\sul
+	\\
+% fourth line
+% C_SU(3)
+\notag
+	\frac{d}{dt}\, 
+	C_\suc
+	&
+	~~=~~
+	- \frac{g_3^2}{192\pi^2} 
+	{\rm tr} \lgr
+		2 C_Q ~-~ C_u ~-~ C_d 
+		\rgr
+	~~+~~
+	\left(
+		\alpha_3 g_3^2 ~+~
+		\frac{7}{12\pi^2} N_S g_3^2
+	\right) \cdot
+	C_\suc
+	\\
+% fifth line
+% \kappa
+\notag
+	\frac{d}{dt}\, 
+	\kappa
+	&
+	~~=~~
+	\frac{5}{12\pi^2} 
+	\left[
+		(g')^2\, Y_H^2 ~+~ g^2\, T_W
+	\right] \cdot \kappa
+	~~+~~
+	\frac{1}{8\pi^2}
+	{\rm tr}
+	\lgr
+		\lambda_e\, \lambda_e^\dag
+		~+~
+		N_S\, \lambda_u\, \lambda_u^\dag
+		~+~
+		N_S\, \lambda_d\, \lambda_d^\dag
+	\rgr
+	\cdot \kappa
+	\\
+% sixth line
+\notag
+	&
+	~~-~~
+	\frac{1}{12\pi^2}
+	{\rm tr} 
+	\lgr
+		N_S\, \lambda_d^\dag\, C_Q\, \lambda_d 
+		~+~
+		\lambda_e^\dag\, C_L\, \lambda_e
+		~-~
+		N_S\, \lambda_u^\dag\, C_Q\, \lambda_u
+		~-
+	\right.
+	\\
+% seventh line
+\notag
+	&
+	\qquad\qquad
+	\left.
+		-~
+		N_S\, \lambda_d\, C_d\, \lambda_d^\dag
+		~-~
+		\lambda_e\, C_e\, \lambda_e^\dag
+		~+~
+		N_S\, \lambda_u\, C_u\, \lambda_u^\dag
+	\rgr
+\end{align}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
