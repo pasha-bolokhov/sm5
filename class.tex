@@ -1,5 +1,5 @@
 %\documentclass[12pt]{article}
-\documentclass[12pt]{revtex4}
+\documentclass[12pt,preprintnumbers,nofootinbib]{revtex4}
 %\documentclass[draft,12pt]{article}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -10,7 +10,7 @@
 \usepackage[english]{babel}
 \usepackage{latexsym}
 \usepackage{amssymb}
-\usepackage{palatino}
+%\usepackage{palatino}
 %\usepackage{chancery}
 %\usepackage{newcent}
 %\usepackage{charter}
@@ -51,28 +51,56 @@
 %%
 %% The title page
 %% 
-\begin{titlepage}
+%\begin{titlepage}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
-\vspace*{3.0cm}
-\begin{center}
-{\Large
-  \textbf{
-  \textsc{Classification of Dimension 5 Lorentz Violating Interactions 
+%\hspace{-4cm}
+%\begin{center}
+%{\Large
+%  \textbf{
+%  \textsc{Classification of Dimension 5 Lorentz Violating Interactions 
+%		in the Standard Model}
+%         }
+%      }
+
+\title{Classification of Dimension 5 Lorentz Violating Interactions 
 		in the Standard Model}
-         }
-      }
+%\title{$\;\;\;\;\;\;\;\;\;\;\;\;\;$
+%Electric Dipole Moments as Probes of $CPT$ Invariance $\;\;\;\;\;\;\;\;\;\;\;\;\;$}
 
-\vspace*{1.0cm}
-  {\large \fontfamily{ppl}\selectfont Pavel A. Bolokhov~ 
-	{\normalsize\bf \textsc{and}} ~Maxim Pospelov}
 
-\vspace*{1.5cm}
-{\large\bf Abstract}
-%	We introduce Lorentz violating interactions at dimension five level into
-%	the Standard Model.
-\end{center}
+\author{Pavel A. Bolokhov$^{\,(a,b)}$ and Maxim Pospelov$^{\,(a,c)}$}
 
+
+\affiliation{$^{\,(a)}${\it Department of Physics and Astronomy, University of Victoria, 
+     Victoria, BC, V8P 1A1 Canada}\\
+$^{\,(b)}${\it Theoretical Physics Department, St.Petersburg State University, Ulyanovskaya 1,
+        Peterhof, St.Petersburg, 198504, Russia}\\
+$^{\,(c)}${\it Perimeter Institute for Theoretical Physics, Waterloo,
+Ontario N2J 2W9, Canada}
+}
+
+
+%\vspace*{3.0cm}
+%\begin{center}
+%{\Large
+%  \textbf{
+%  \textsc{Classification of Dimension 5 Lorentz Violating Interactions 
+%		in the Standard Model}
+%         }
+%      }
+%
+%\vspace*{1.0cm}
+%  {\large \fontfamily{ppl}\selectfont Pavel A. Bolokhov~ 
+%	{\normalsize\bf \textsc{and}} ~Maxim Pospelov}
+%
+%\vspace*{1.5cm}
+%{\large\bf Abstract}
+%%	We introduce Lorentz violating interactions at dimension five level into
+%%	the Standard Model.
+%\end{center}
+
+\begin{abstract}
 	We investigate generic Lorentz-violating extensions of Quantum Electrodynamics and
 	the Standard Model at the level of mass dimension five operators.
 	We classify all inherent LV interactions and show that they
@@ -83,6 +111,7 @@
 	We argue, that existing strong limits on the operators from the observable sector
 	can be extended to all listed interactions via the RG flow mixing, 
 	therefore producing a naturalness problem to theories predicting LV of dimension five.
+\end{abstract}
 	
 	
 
@@ -96,11 +125,13 @@
 %	We discuss typical experimental constraints applicable to the parameters
 %	of such a theory.
 
-\end{titlepage}
+\maketitle
 
-\newpage
+%\end{titlepage}
 
-\tableofcontents
+%\newpage
+%
+%\tableofcontents
 
 \newpage
 
@@ -228,31 +259,36 @@
 	as one of the approaches to break 
 	Lorentz invariance.
 	The idea of breaking Lorentz invariance appeared
-	long ago [], and nowadays streaming in this direction is
+	long ago 
+\cite{Pavlopoulos:1967dm}, 
+	and nowadays streaming in this direction is
 	stimulated by advances in experimental techniques which can
 	probe for this symmetry.
 	From the other direction come models of 
-	UV physics [loopgr,
-	strings,non-comm] which predict that violation of 
+	UV physics 
+\cite{DN,lcq,Vucetich:2005ra,Sahlmann:2002qk}
+	which predict that violation of 
 	Lorentz symmetry might take place at low energies.
 	However, the mechanism for breaking of Lorentz invariance, generally
 	speaking, is not known.
 	From aesthetical point of view the possibility of spontaneous
 	breaking of Lorentz invariance seems the most attractive, 
 	and a lot of investigations have been done in this
-	area, however, a satisfactory mechanism for SBLS has not
+	area [ref?], however, a satisfactory mechanism for spontaneous breaking has not
 	been found. 
 
 	But it is still possible to work in the effective theory, wherein the
 	breaking of Lorentz invariance is made explicit via the 
-	presence of background tensors, as was done by Kostelecky [ref].
+	presence of background tensors, as was done by Kostelecky
+\cite{Colladay:1996iz}.
 	In this direction, most developments consider only a sufficiently limited set
 	of LV interactions, examples of which are the dimension three
 	Chern-Simons term and the minimal coupling fermionic current operator. 
 	Among tensor operators, most frequently one would encounter 
 	those originating from non-commutative field theories, where the
 	natural breaking ingredient is the parameter of non-commutativity
-	$ \theta^{\mu\nu} $.
+	$ \theta^{\mu\nu} $ 
+\cite{Mocioiu:2000ip}.
 	Indeed, at the level of three- and four-dimensional interactions,
 	there are not too many tensor structures which can be included
 	in the effective lagrangian.	
@@ -265,12 +301,16 @@
 	A natural problem of reviewing all imaginable LV interactions
 	emerges, since {\it a priori} one has no selection rule (or right) to 
 	deliberately narrow the interaction spectrum of an effective theory.
-	Such a problem has been resolved long ago [{\it ref}] for operators of 
+	Such a problem has been resolved long ago
+\cite{Colladay:1998fq}
+ 	for operators of 
 	dimension three and four, but the domain of dimension five structures has
 	been covered only partly. 
 	While the supersymmetric Standard Model (MSSM) has been shown to,
 	owing to a stronger symmetry, possess a sufficiently small set of 
-	admissible structures [{\it ref}] (and we believe that other
+	admissible structures 
+\cite{Bolokhov:2005cj}
+	(and we believe that other
 	UV extensions do so), the Standard Model itself has not 
 	been explored in a similar thorough manner.
 
@@ -324,16 +364,19 @@ $ \Lambda_{\rm UV} $,
 	The problem of constraining the parameters of such a theory, although
 	is important, remains out of the main line of our work, given
 	that already a number of highly-competitive bounds were obtained
-	within recent years [].
+	within recent years 
+\cite{CG,Ted1,Gagnon:2004xh}.
 %	From the phenomenological respect, 
 	As a matter of fact,
 	one can find a strikingly broad 
 	facilitation of LV operators in searching for new effects ---
-	starting from Quantum mechanical phenomena, nuclear, high energy physics,
+	starting from quantum-mechanical phenomena, nuclear, high energy physics,
 	astrophysical effects and reaching towards cosmology and gravity
-	[{\it lots of refs}].
+	[{\it perhaps:
+	Pospelov-Romalis,SQED,Jacobson,Jacobson/aether,Carroll/baryogenesis,Moore/Nelson?, more}]
 	One of the relevant directions is the possibility of CPT-odd
-	thermal baryogenesis.
+	thermal baryogenesis
+\cite{Bertolami:1996cq,Carroll:2005dj,Bolokhov_lepto}.
 	One could anticipate that some of the LV interactions can catalyze 
 	generation of baryon asymmetry of the Universe in thermal equilibrium.
 	Generalizing, the broader set of interactions introduced here may be expected to 
@@ -342,7 +385,8 @@ $ \Lambda_{\rm UV} $,
 
 	Classification of operators proceeds by building various gauge-invariant tensors
 	from the Standard Model fields. 
-	Following [{\it Myers, Pospelov}] we specify that a generic interaction must
+	Following 
+\cite{MP:} we specify that a generic interaction must
 	fulfil certain conditions to be called a true LV operator. 
 	Quite naturally these conditions are augmented by a requirement that such
 	tensors be irreducible under the Lorentz group transformations.
@@ -416,7 +460,8 @@ $ \Lambda_{\rm UV} $,
 %	the main features of LV lagrangians are the easiest to study within it.
 %	Furthermore, in the aspect of LV effects, 
 	in this aspect,
-	it is still one of the most popular testing grounds [].
+	it is still one of the most popular testing grounds 
+\cite{CFJ,CG,Ted1,MP:,Bolokhov:2005cj}.
 	Detailed study of LV QED in the first place will also 
 	allow us to make the transition to the Standard Model more
 	smooth. 
@@ -456,7 +501,8 @@ $ \Lambda_{\rm UV} $,
 \section{Dimension 5 Operators in QED}
 
 	To build a Lorentz-violating extension of QED, we proceed in a manner
-	similar to Myers-Pospelov electrodynamics [].
+	similar to Myers-Pospelov electrodynamics
+\cite{MP:}.
 %	We start with a toy model of Lorentz-violating extension of Quantum
 %	Electrodynamics. 
 %	We start with a toy model of Quantum Electrodynamics, where we
@@ -545,19 +591,18 @@ $ \Lambda_{\rm UV} $,
 	\text{and}\qquad
 	F^{\mu\nu} \partial^\lambda F^{\rho\sigma}~.
 \end{equation}
-	
 	It is of no cost to see that the first two terms are {\it reducible}
 	on the equations of motion, and, in accord with our requirements
 	have to be ignored. 
 	Amongst the two left structures, 
 $ F_{\mu\lambda} \p_\nu \widetilde{F}_\rho^{\phantom{\rho}\lambda} $ and
 $ F^{\mu\nu} \partial^\lambda F^{\rho\sigma} $,
-	the first one has been studied in [{\it Myers, Pospelov}] and
-	shown to modify the dispersion relations of the photon. 
+	the first one has been studied in 
+\cite{MP:} 
+	and shown to modify the dispersion relations of the photon. 
 	It was shown in particular that this operator has to be 
 	contracted with an
-	irreducible absolutely antisymmetric tensor
-	\footnote{
+	irreducible absolutely antisymmetric tensor\footnote{
 	From here on the tensor coefficient in front of the operator
 	will denote the background tensor to which it is coupled.}
 	in order to be protected from uncontrollable divergencies:
@@ -1072,7 +1117,8 @@ $	E_1^{\mu\nu\rho\lambda}\cdot
 	Another complication comes from the family-nature of the
 	Standard Model, which generically causes all coefficients
 	of all LV interactions in \eqref{QED_matter} to be 
-	matrices in the flavor space.
+	matrices in the flavor space
+\cite{Colladay:1998fq}.
 	Furthermore, the presence of the Higgs sector creates new
 	possibilities for LV interactions. 
 	There is one simplification arising from chirality of
@@ -1840,6 +1886,7 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	Besides the conceptual difficulty of quadratically-divergent terms,
 	they fall under severe constraints on dimension three
 	interactions
+\cite{Gagnon:2004xh}
 \begin{equation}
 \label{limit_dim3}
 	| b^\mu | ~=~ ({\rm loop\ factor})\, 
@@ -1970,9 +2017,10 @@ $ C^{\mu\nu\rho}_\el $
 
 
 	Thus, phenomenologically, the interactions in \eqref{SM_quark_1GeV}-\eqref{SM_gauge_1GeV} 
-	can be divided into two groups.
+	can be further divided into two groups.
 	The first group is formed by the operators which modify dispersion relations
-	and grow with energy. 
+	and grow with energy 
+\cite{MP:}.
 	The second group, correspondingly, hosts all other
 	structures, which we designate as ``soft'' LV interactions  
 	(see Table \ref{constr_table}).
@@ -2030,7 +2078,8 @@ $ C^{\mu\nu\rho}_\el $
 	Operators growing with energy, which we can call ``kinematic'' operators,
 	as they lead to modifications of thresholds of various reactions, are 
 	known to be severely constrained by the
-	observations of high energy cosmic rays [{\it Gagnon, Moore}].
+	observations of high energy cosmic rays 
+\cite{Gagnon:2004xh}.
 	These constraints are an exception to our consideration of the low energy 
 	effective lagrangian, since the cosmic rays are believed to have the
 	energies of $ \sim 10^{11} $~GeV.
@@ -2046,7 +2095,7 @@ $ C^{\mu\nu\rho}_\el $
 	is $ \sim (100~{\rm MeV})^2 $.
 	Known limits on such interactions allow one to estimate the operators 
 $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
-	[{\it Bolokhov,Nibbelink,Pospelov}]:
+\cite{Bolokhov:2005cj}:
 \begin{equation}
 \label{nucl_spin}
 	|c^\mu_{q,5}|,~~ |D^{\mu\nu\rho}_{q,5}| ~~\lesssim~~~
@@ -2056,7 +2105,8 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	will produce an interaction of the nucleus with the external electromagnetic field.
 	The same kind of interaction appears after averaging the tensor operators
 	involving gluons $ D^{\mu\nu\rho}_{qg} $, where the effective coupling will be
-	proportional to $ \alpha_{\rm S} $ [{\it Manohar, Georgi, 1984, NPB234}]. 
+	proportional to $ \alpha_{\rm S} $ 
+\cite{Manohar:1983md}.
 	However, any conceivable electromagnetic field which can be created in laboratory
 	is much weaker than a typical nuclear field.
 	For a laboratory setup of $ |\vec{E}{}_{\rm ext}| \sim $ 10~kV/cm 
@@ -2066,7 +2116,7 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	
 	The interactions $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ and
 	$ D^{\mu\nu\rho}_{qg,5} $ can be shown to exhibit EDM-like signatures
-	[{\it Bolokhov, Pospelov, Romalis}].
+\cite{Bolokhov_EDM}.
 	When averaged over a nucleon they create a CPT-odd coupling of the external electric 
 	field and the nuclear spin. 
 	Electron operators $ c_{l,5}^\mu $ and $ D_{l,5}^{\mu\nu\rho} $ similarly induce
@@ -2102,12 +2152,15 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	In particular, the structure 
 	$ \ov{\psi}\,\wt{F}^{\mu\nu}\gamma_\mu \gamma^5 \psi $
 	induces a CPT-odd anomalous magnetic moment for the electron 
-	[{\it Bolokhov,Nibbelink,Pospelov}], and shifts energy levels of the 
-	hydrogen atom [{\it Belich..hep-th/0604148}] ---
+\cite{Bolokhov:2005cj},
+	and shifts energy levels of the 
+	hydrogen atom
+\cite{Belich:2006pi} ---
 	the effects which can be easily constrained.
 	The interaction term $ \ov{\psi}\,\wt{F}^{\mu\nu}\gamma_\mu \psi $
 	in its turn is expected to generate a detectable 
-	Aharanov-Casher phase of a neutral particle [{\it hep-th/0603091}].
+	Aharanov-Casher phase of a neutral particle 
+\cite{Belich:2006tk}.
 	However, we again emphasize that the naturalness considerations
 	put much stronger bounds and 
 	render these operators practically impossible to exist, 
@@ -2129,7 +2182,7 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	It has been shown that QED admits a plenty of interactions,
 	parametrized by background vectors and tensors.
 	Exploration of some of the operators was done earlier
-	[{\it Myers,Pospelov}].
+\cite{MP:,Gagnon:2004xh}.
 	The gauge sector of QED appears to only possess a single LV
 	operator $ C^{\mu\nu\rho} $, which is known to generate cubic
 	modifications of dispersion relations.	
@@ -2161,7 +2214,8 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	We can hardly see it possible for some interactions to outstand in magnitude 
 	with respect to other and yet not to induce observable effects at low
 	energy. 
-	Given the strength of typical constraints we pick up the natural 
+	Given the strength of typical constraints 
+\cite{Gagnon:2004xh}, we pick up the natural 
 	conclusion that Lorentz violation at dimension five level in the Standard
 	Model is excluded by observations.
 
@@ -3341,7 +3395,8 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 
 
 	
+\bibliographystyle{apsrev}
+\bibliography{class}
 
-	
 	
 \end{document}
