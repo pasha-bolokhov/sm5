@@ -255,7 +255,7 @@ are still well-motivated. The reason is that an a priori unknown physics at high
 energy scales could lead to a spontaneous breaking of Lorentz invariance by 
 giving an expectation value to certain non-SM fields 
 that carry Lorentz indices, such as vectors, 
-tensors, and gradients of scalar fields. The interaction of this fields with  operators composed 
+tensors, and gradients of scalar fields. The interaction of these fields with  operators composed 
 from the SM fields, fully Lorentz-symmetric before the spontaneous breaking, below the 
 scale of the condesation will manifest itself as effective LV terms. Schematically, one 
 has 
@@ -930,14 +930,15 @@ of explicit computation gives the following set of RG equations:
 	&&
 	\frac{d} {d t}\, E_4^{\kappa\mu\nu\rho} ~=~
 		\frac{e^2}{8\pi^2}\, E_4^{\kappa\mu\nu\rho}
-	\\
+%	\\
 % eighth line
-	&
-	\phantom{\frac{d} {d t}\, E_2^{\kappa\mu\nu\rho}}
-		~+~ \frac{41e^2}{96\pi^2}\,
-		\epsilon^{\varphi\xi\mu\nu} 
-		\epsilon^{\lambda\chi\kappa\rho}\,
-		(E_2)_{(\varphi\lambda)(\chi\xi)}
+%%%%%%%%% this term does not contribute, as it appears
+%	&
+%	\phantom{\frac{d} {d t}\, E_2^{\kappa\mu\nu\rho}}
+%		~+~ \frac{41e^2}{96\pi^2}\,
+%		\epsilon^{\varphi\xi\mu\nu} 
+%		\epsilon^{\lambda\chi\kappa\rho}\,
+%		(E_2)_{(\varphi\lambda)(\chi\xi)}
 	~.
 \end{align*}	
 	Here we have introduced $ \wt{f}{}_{1,2}^{\mu\nu} \,\equiv\, \frac{1}{2} 
@@ -1033,15 +1034,15 @@ of explicit computation gives the following set of RG equations:
 %	$ {\rm SU}_{\rm C}(3) \otimes $ ${\rm SU}_{\rm L}(2) 
 %	\otimes {\rm U}(1) $.
 	Clearly the existence of families causes coefficients
-	of all LV interactions in the matter scetor \eqref{QED_matter} to be 
+	of all LV interactions in the matter sector \eqref{QED_matter} to be 
 	matrices in the flavor space
 \cite{Colladay:1998fq}.
 	Furthermore, the presence of the Higgs sector creates new
 	possibilities for LV interactions. 
-	However, there is one simplification arising from intrinisc chirality of
+	However, there is one simplification arising from intrinsic chirality of
 	SM spinors, which together with gauge invariance 
    would essentially prohibit all $E^{\kappa\mu\nu\rho}$ operators at dimension five level.
-In the rest of this sections, we present our resuts for LV operators in different 
+In the rest of this section, we present our resuts for LV operators in different 
 sectors of the SM. 
 
 %	As in the previous section, LV interactions must obey 
@@ -1117,7 +1118,8 @@ sectors of the SM.
 	the first two terms in \eqref{QED_matter} actually vanish on 
 	the equations of motion.
 	However, with the exception of right-handed leptons, 
-	the covariant derivatives for SM field contain different gauge potentials. for example, for quarks one has
+	the covariant derivatives for SM field contain different gauge potentials. 
+	For example, for quarks one has
 %% commutator of covariant derivatives in the SM
 \begin{equation}
 \label{FmnQCD}
@@ -1259,7 +1261,12 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	~~+~~
 	D_{u,3}^{\mu\nu\rho} \cdot
 	\ov{u}\, \gamma_{(\mu} G_{\rho)\nu}\, u
-	~~+~~
+	~~+
+	\\
+% eighth line
+\notag
+	&&
+	+~~
 	D_{d,1}^{\mu\nu\rho} \cdot
 	\ov{d}\, \gamma_{(\mu} F_{\rho)\nu}\, d
 	~~+~~
@@ -1416,16 +1423,17 @@ be further subdivided into two groups.
 	H^\dag \wt{W}_{\mu\lambda} \md^\lambda H
 	~~+
 	\\
-% fifth line
-\nonumber
-	&&
-	+~~
-	k^{\mu\nu\rho}_{1} \cdot
-	H^\dag \md_{(\mu} F_{\nu)\rho} H
-	~~+~~
-	k^{\mu\nu\rho}_{2} \cdot
-	H^\dag \md_{(\mu} W_{\nu)\rho} H
-	\\
+%%%%%%%%%%%%%%% redundant terms, as it appears
+%% fifth line
+%\nonumber
+%	&&
+%	+~~
+%	k^{\mu\nu\rho}_{1} \cdot
+%	H^\dag \md_{(\mu} F_{\nu)\rho} H
+%	~~+~~
+%	k^{\mu\nu\rho}_{2} \cdot
+%	H^\dag \md_{(\mu} W_{\nu)\rho} H
+%	\\
 % sixth line
 \nonumber
 	&&
@@ -1451,44 +1459,37 @@ be further subdivided into two groups.
 % first line
 \notag
 	\mathcal{L}_{\rm SM}^{\rm Higgs-quark} & ~~=~~
+%	\phantom{+~~}
+	h^{\mu}_{QQ} \cdot
+	\ov{Q}H \, \gamma_\mu\, H^\dag Q ~~+~~
 	\\
+%%% third line
+%%\notag
+%%	&
+%%%	p^{(1)\mu}_{QQ} \cdot
+%%%%	p^{(2)\mu}_{QQ} \cdot
+%%%%	\ov{Q}\epsilon H^* \, \gamma_\mu \, H^T \epsilon Q 
+%%	\\
 % second line
 \notag
 	&
-	\phantom{+~~}
-	h_{QQ}^\mu \cdot
-	\ov{Q}\, \gamma_\mu Q \cdot H^\dag H ~~+~~
-	h_{uu}^\mu \cdot
-	\ov{u}\, \gamma_\mu u \cdot H^\dag H ~~+~~
-	h_{dd}^\mu \cdot
-	\ov{d}\, \gamma_\mu d \cdot H^\dag H 
-	\\
-% third line
-\notag
-	&
 	+~~
-	p^{(1)\mu}_{QQ} \cdot
-	\ov{Q}H \, \gamma_\mu\, H^\dag Q ~~+~~
-	p^{(2)\mu}_{QQ} \cdot
-	\ov{Q}\epsilon H^* \, \gamma_\mu \, H^T \epsilon Q 
+	p_{QQ}^\mu \cdot
+	\ov{Q}\, \gamma_\mu Q \cdot H^\dag H ~~+~~
+	p_{uu}^\mu \cdot
+	\ov{u}\, \gamma_\mu u \cdot H^\dag H ~~+~~
+	p_{dd}^\mu \cdot
+	\ov{d}\, \gamma_\mu d \cdot H^\dag H 
 	\\
 % fourth line
 \notag
 	&
 	+~~
+%%	q^{(1)\mu}_{Qd} \cdot
+%%	\ov{Q}\, \md_\mu d\cdot H ~~+~~
 	q^{(1)\mu}_{Qd} \cdot
-	\ov{Q}\, \md_\mu d\cdot H ~~+~~
-	q^{(2)\mu}_{Qd} \cdot
 	\ov{Q}\, d \; \md_\mu H ~~+~~
-	\text{h.c.}
-	\\
-% fifth line
-\notag
-	&
-	+~~
 	q^{(1)\mu}_{Qu} \cdot
-	\ov{Q}\, \md_\mu u \cdot \epsilon H^* ~~+~~
-	q^{(2)\mu}_{Qu} \cdot
 	\ov{Q}\, u \; \md_\mu \epsilon H^* ~~+~~
 	\text{h.c.}
 	\\
@@ -1496,10 +1497,12 @@ be further subdivided into two groups.
 \notag
 	&
 	+~~
-	r^{(1)\nu}_{Qd} \cdot
-	\ov{Q}\, \sigma^{\mu\nu} \md_\nu d \cdot H ~~+~~
-	r^{(2)\nu}_{Qd} \cdot
+%%	r^{(1)\nu}_{Qd} \cdot
+%%	\ov{Q}\, \sigma^{\mu\nu} \md_\nu d \cdot H ~~+~~
+	q^{(2)\nu}_{Qd} \cdot
 	\ov{Q}\, \sigma^{\mu\nu} d\; \md_\nu H ~~+~~
+	q^{(2)\nu}_{Qu} \cdot
+	\ov{Q}\, \sigma^{\mu\nu} u\; \md_\nu \epsilon H^* ~~+~~
 	\text{h.c.}
 	\\
 % seventh line
@@ -1510,16 +1513,6 @@ be further subdivided into two groups.
 	\ov{Q}\, \md_{(\mu} \sigma_{\nu)\rho} d \cdot H ~~+~~
 	r^{(2)\mu\nu\rho}_{Qd} \cdot
 	\ov{Q}\, \sigma_{\nu)\rho} d \; \md_{(\mu} H ~~+~~
-	\text{h.c.}
-	\\
-% eighth line
-\notag
-	&
-	+~~
-	r^{(1)\nu}_{Qu} \cdot
-	\ov{Q}\, \sigma^{\mu\nu} \md_\nu u \cdot \epsilon H^* ~~+~~
-	r^{(2)\nu}_{Qu} \cdot
-	\ov{Q}\, \sigma^{\mu\nu} u\; \md_\nu \epsilon H^* ~~+~~
 	\text{h.c.}
 	\\
 % ninth line
@@ -1541,54 +1534,27 @@ be further subdivided into two groups.
 % first line
 \notag
 	\mathcal{L}_{\rm SM}^{\rm Higgs-lepton} & ~~=~~
+	h^{\mu}_{LL} \cdot
+	\ov{L}H \, \gamma_\mu\, H^\dag L ~~+~~
 	\\
 % second line
 \notag
 	&
-	\phantom{+~~}
-	h_{LL}^\mu \cdot
-	\ov{L}\, \gamma_\mu L \cdot H^\dag H ~~+~~
-	h_{\nu\nu}^\mu \cdot
-	\ov{\nu}\, \gamma_\mu \nu \cdot H^\dag H ~~+~~
-	h_{ee}^\mu \cdot
-	\ov{e}\, \gamma_\mu e \cdot H^\dag H 
-	\\
-% third line
-\notag
-	&
 	+~~
-	p^{(1)\mu}_{LL} \cdot
-	\ov{L}H \, \gamma_\mu\, H^\dag L ~~+~~
-	p^{(2)\mu}_{LL} \cdot
-	\ov{L}\epsilon H^* \, \gamma_\mu \, H^T \epsilon L 
+	p_{LL}^\mu \cdot
+	\ov{L}\, \gamma_\mu L \cdot H^\dag H ~~+~~
+	p_{\nu\nu}^\mu \cdot
+	\ov{\nu}\, \gamma_\mu \nu \cdot H^\dag H ~~+~~
+	p_{ee}^\mu \cdot
+	\ov{e}\, \gamma_\mu e \cdot H^\dag H 
 	\\
 % fourth line
 \notag
 	&
 	+~~
 	q^{(1)\mu}_{Le} \cdot
-	\ov{L}\, \md_\mu e\cdot H ~~+~~
-	q^{(2)\mu}_{Le} \cdot
 	\ov{L}\, e \; \md_\mu H ~~+~~
-	\text{h.c.}
-	\\
-% fifth line
-\notag
-	&
-	+~~
-	q^{(1)\mu}_{L\nu} \cdot
-	\ov{L}\, \md_\mu \nu \cdot \epsilon H^* ~~+~~
-	q^{(2)\mu}_{L\nu} \cdot
-	\ov{L}\, \nu \; \md_\mu \epsilon H^* ~~+~~
-	\text{h.c.}
-	\\
-% sixth line
-\notag
-	&
-	+~~
-	r^{(1)\nu}_{Le} \cdot
-	\ov{L}\, \sigma^{\mu\nu} \md_\nu e \cdot H ~~+~~
-	r^{(2)\nu}_{Le} \cdot
+	q^{(2)\nu}_{Le} \cdot
 	\ov{L}\, \sigma^{\mu\nu} e\; \md_\nu H ~~+~~
 	\text{h.c.}
 	\\
@@ -1602,34 +1568,22 @@ be further subdivided into two groups.
 	\ov{L}\, \sigma_{\nu)\rho} e \; \md_{(\mu} H ~~+~~
 	\text{h.c.}
 	\\
-% eighth line
+% nth line
 \notag
 	&
 	+~~
-	r^{(1)\nu}_{L\nu} \cdot
-	\ov{L}\, \sigma^{\mu\nu} \md_\nu \nu \cdot \epsilon H^* ~~+~~
-	r^{(2)\nu}_{L\nu} \cdot
-	\ov{L}\, \sigma^{\mu\nu} \nu\; \md_\nu \epsilon H^* ~~+~~
-	\text{h.c.}
-	\\
-% ninth line
-\notag
-	&
-	+~~
-	r^{(1)\mu\nu\rho}_{L\nu} \cdot
-	\ov{L}\, \md_{(\mu} \sigma_{\nu)\rho} \nu \cdot \epsilon H^* ~~+~~
-	r^{(2)\mu\nu\rho}_{L\nu} \cdot
-	\ov{L}\, \sigma_{\nu)\rho} \nu \; \md_{(\mu} \epsilon H^* ~~+~~
+	\varsigma^{\mu\nu} \cdot
+	\left( H^\dag L \right)^T \sigma_{\mu\nu} \left( H^\dag L \right)
+	~~+~~
 	\text{h.c.}
 \end{align}
-
-
-{\bf What is $\nu$-field? There are also operators that violate the 
-lepton number}
+	The last term in the Higgs-lepton sector, which couples to 
+	matrix $ \varsigma^{\mu\nu} $ antisymmetric in the flavor space, is unusual.
+	It is special in that it does not have analogs neither in other sectors, 
+	nor in lower dimensions --- it violates the lepton number by $ \Delta L = 2 $.
 
 	This completes the list of the dimension V Lorentz-violating
 	operators in the Standard Model.
-
 	The set of operators in the Standard Model appears to be much
 	wider than that in QED due to the diversity of fields and interactions.
 	Loop corrections are expected to intermix the operators in an 
@@ -1676,7 +1630,7 @@ the results in Appendix \ref{RG_SM}.
 %	LV operators which are applicable to the operators listed in the
 %	previous section.
 	Many of the constraints result from laboratory experiments
-	or astrophysical observations at eneries much lower
+	or astrophysical observations at energies much lower
 	than the weak scale. 
 	The Higgs boson, $W$ and $Z$  bosons and heavy SM fermions 
     do not propagate 
@@ -1687,7 +1641,7 @@ the results in Appendix \ref{RG_SM}.
 %	the weak bosons. 
 	One should keep in mind, however, that loop effects
 	admix LV operators with heavy particles to the light quark and lepton 
-    LV operators of the same dimension. Such (typically one-lop) corrections 
+    LV operators of the same dimension. Such (typically one-loop) corrections 
     include the logarthmic mixing under the RG running,
     as well as the finite threshold corrections. 
 	Therefore, the bounds discussed below contain an intrinsic sensitivity to LV 
@@ -1698,7 +1652,7 @@ the results in Appendix \ref{RG_SM}.
  is useful to rewrite the LV  Lagrangian at the normalization scale of
 	around $ 1~\GeV $, the borderline of applicability for the quark-gluon description.
 	At this scale it is useful to abandon chiral fermions and combine the left- and right-handed
-fileds into
+fields into
 	full Dirac spinors as well as split the
 	$ \sul $ doublets. 
 	
@@ -1748,8 +1702,8 @@ fileds into
     The first group of operators, the unprotected operators, are those that generate
     quadratically divergent corrections to dimension 3 operators via quantum corrections. 
 	Using $C,P,T$ properties it is easy to show that the "dangerous" operators
-	in Eqs. \eqref{SM_quark} and \eqref{SM_lepton} are the ones coupled to
-	the dual field strengths
+	in the quark and lepton sectors (Eqs. \eqref{SM_quark} and \eqref{SM_lepton}) 
+	are the ones coupled to the dual field strengths
 %%
 %% dangerous LV operators
 \begin{align}
@@ -1779,7 +1733,12 @@ fileds into
 	~,
 \end{align}
 	where we have abbreviated $ q = u, d $ and $ \psi = e, \nu $.
-	{\bf What about operators from Higgs sector}
+	In the Higgs sector, literally all operators in Eqs. (XX -XX )are unprotected from 
+	transmuting into lower dimensional terms.
+	The exception is the unusual $ \Delta L = 2 $ term $ \varsigma^{\mu\nu} $ in Eq. (XX), 
+	which is protected simply by the reason that there are no lepton-number violating terms of 
+	lower mass dimensions.
+	
 	
 Using the quadratic divergence of the loop corrections generated by operators \eqref{SM_divgt},
 one can estimate the strength of the naturallness constraints resulting from experimental limits 
@@ -1851,26 +1810,25 @@ on dimension 3 LV terms:
 \begin{align}
 % first line
 \nonumber
-	\mathcal{L}_{\rm SM\ 1~GeV}^{\rm lepton} = \hspace{-2.0cm}&
-	\\
-% second line
-\nonumber
-	&
-	\phantom{+~~}
+	\mathcal{L}_{\rm SM\ 1~GeV}^{\rm lepton} & ~~=~~ %\hspace{-2.0cm}&
 	c_l^\mu \cdot
 	\ov{\psi}\, \gamma^{\lambda} F_{\mu\lambda}\, \psi
 	~~+~~
 	c_{l,5}^\mu \cdot
 	\ov{\psi}\, \gamma^{\lambda}\gamma^5 F_{\mu\lambda}\, \psi
-	~~+~~
+	\\
+% third line
+\label{SM_lepton_1GeV}
+	&
+	+~~
 	C_l^{\mu\nu\rho} \cdot
 	\ov{\psi}\, \gamma_{(\mu} \md_\nu \md_{\rho)}\, \psi
 	~~+~~
 	C_{l,5}^{\mu\nu\rho} \cdot
 	\ov{\psi}\, \gamma_{(\mu} \md_\nu \md_{\rho)}\gamma^5\, \psi
 	\\
-% fifth line
-\label{SM_lepton_1GeV}
+% fourth line
+\notag
 	&
 	+~~
 	D_{l}^{\mu\nu\rho} \cdot
@@ -1878,7 +1836,15 @@ on dimension 3 LV terms:
 	~~+~~
 	D_{l,5}^{\mu\nu\rho} \cdot
 	\ov{\psi}\, \gamma_{(\mu} F_{\rho)\nu}\gamma^5\, \psi
-	~.
+	\\
+% fifth line
+\notag
+	&
+	+~~
+	\varsigma^{\mu\nu} \cdot
+	\left( H^\dag L \right)^T \sigma_{\mu\nu} \left( H^\dag L \right)
+	~~+~~
+	\text{h.c.}
 \end{align}
 
 	Passing to the gauge sector, we refer to Eq. \eqref{SM_gauge}.
@@ -2029,15 +1995,15 @@ because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\
 	level.
 	
 
-	Although in most cases direct measurements and observations do not involve 
-	the neutrino sector, 
-	we speculate that the limits applicable to the electron can be extended to
-	the whole lepton sector owing to the intertwining of the operators caused by
-	renormalization (see Appendix \ref{RG_SM}).
-	{\bf I do not understand this paragraph. Neutrinos are part of L-doublet. If you constrained 
-	L-coefficient, you constrained neutrino sector. Apart from L-violating operators that 
-	we need to add}
-
+%	Although in most cases direct measurements and observations do not involve 
+%	the neutrino sector, 
+%	we speculate that the limits applicable to the electron can be extended to
+%	the whole lepton sector owing to the intertwining of the operators caused by
+%	renormalization (see Appendix \ref{RG_SM}).
+%	{\bf I do not understand this paragraph. Neutrinos are part of L-doublet. If you constrained 
+%	L-coefficient, you constrained neutrino sector. Apart from L-violating operators that 
+%	we need to add}
+%
 %	We remark again that our considerations here certainly excluded such 
 %	operators as $ \ov{\psi}\,\wt{F}^{\mu\nu}\gamma_\mu [\gamma^5] \psi $,
 %	since in the Standard Model they are unprotected from quadratic divergencies
@@ -2468,6 +2434,10 @@ because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\
 	\left[
 		(g')^2\, Y_H^2 ~+~ g^2\, T_W
 	\right] \cdot \kappa
+	\\
+% n-th line
+\notag
+	&
 	~~+~~
 	\frac{1}{8\pi^2}
 	{\rm tr}
@@ -2498,7 +2468,7 @@ because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\
 % seventh line
 \notag
 	&
-	\qquad\qquad
+	\qquad\qquad\quad
 	\left.
 		-~
 		N_S\, \lambda_d\, C_d\, \lambda_d^\dag
