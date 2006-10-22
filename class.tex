@@ -1699,9 +1699,51 @@ fields into
 %	since for them the relations \eqref{gauge_mass_basis} would have no
 %	meaning.
 
-    The first group of operators, the unprotected operators, are those that generate
-    quadratically divergent corrections to dimension 3 operators via quantum corrections. 
-	Using $C,P,T$ properties it is easy to show that the "dangerous" operators
+	For phenomenological reasons, we need to ensure that the operators that we have
+	introduced do not transmute into lower dimensions, and thereby not develop quadratic
+	divergencies. 
+	We can formulate certain criteria to ensure that operators cannot induce lower dimensional
+	interactions:
+\begin{itemize}
+\item	{\it Tensor structure}. Since in the Standard Model there are no $CPT$-odd  
+	dimension three operators of rank higher than one, any LV structure that is coupled
+	to an irreducible tensor (which is not a vector) is unconditionally protected from
+	developing quadratic divergencies.
+\item	{\it Supersymmetry}. In the supersymmetric Standard Model, dimension three LV operators
+	do not exist at all. 
+	Therefore, as long as the theory is considered above the supersymmetry breaking scale, 
+	those operators which fall into supermultiplets of the LV MSSM, are protected.
+	It turns out that there is only one type of such operators
+\begin{equation}
+\label{SUSY_prot}
+	bla-bla.
+\end{equation}	
+	Note that in our case supersymmetry does not help much with the problem of quadratic 
+	divergencies, since we are now considering $ 1~\GeV $ physics where supersymmetry
+	is broken in any case. 
+	Therefore, the above operators are allowed to induce quadratic divergencies, which will
+	be stabilized at the supersymmetry breaking scale. 
+
+\item	{\it $T$-invariance}. Since in the Standard Model one needs multiple loops to flip
+	$ T $-parity of interactions, we assume that the operators which do not have dimension
+	three counterpartners with the same $ T $-parity, are protected.
+
+\item	{\it Lepton-number violation}. There are no dimension three LV operators compatible with
+	the Standard Model which would violate the lepton number. 
+	We know that there is only one $ \Delta L = 2 $ operator of dimension five --- 
+	$ \varsigma^{\mu\nu} $, which therefore is protected against developing quadratic divergencies.
+\end{itemize}
+	
+	The operators for which the above criteria do not apply, have no reason to be protected,
+	and therefore will intermix with lower-dimensional interactions. 
+	We call such operators ``unprotected''. 
+%	We break the LV operators into three major groups: the ``unprotected operators'', 
+%	operators growing with energy and soft LV interactions, which we now discuss in order. 
+%
+%    	The unprotected operators, {i.e.} those which develop quadratic divergencies can be 
+%	found out using the protectedness criteria discussed above.
+	Such interactions are dangerous and we will exclude them from our low energy effective theory. 
+	Using $T$-parity it is easy to show that the dangerous operators
 	in the quark and lepton sectors (Eqs. \eqref{SM_quark} and \eqref{SM_lepton}) 
 	are the ones coupled to the dual field strengths
 %%
@@ -1720,7 +1762,7 @@ fields into
 	\ov{q}\, \gamma^\lambda \wt{F}_{\mu\lambda}\, q
 	~~+~~ 
 	\wt{c}_{q,3}^\mu \cdot
-	\ov{u}\, \gamma^\lambda \wt{G}_{\mu\lambda}\, q
+	\ov{q}\, \gamma^\lambda \wt{G}_{\mu\lambda}\, q
 	\\
 % second line
 	&
@@ -1728,12 +1770,14 @@ fields into
 	\wt{c}_{L,1}^\mu \cdot
 	\ov{L}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, L
 	~~+~~
-	\wt{c}_{\psi}^\mu \cdot
-	\ov{\psi}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, \psi
+	\wt{c}_{e}^\mu \cdot
+	\ov{e}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, e
+%	\wt{c}_{\psi}^\mu \cdot
+%	\ov{\psi}\, \gamma^{\lambda} \wt{F}_{\mu\lambda}\, \psi
 	~~+~~
 	\mathcal{L}_{\rm Higgs}^{\rm divgt}~,
 \end{align}
-	where we have abbreviated $ q = u, d $ and $ \psi = e, \nu ??? $.
+	where we have abbreviated $ q = u, d $.
 	In the Higgs sector, the following operators in 
 	Eqs.~\eqref{Higgs_gauge}-\eqref{Higgs_lepton} are unprotected from 
 	transmuting into lower dimensional terms:
@@ -1818,7 +1862,9 @@ on dimension 3 LV terms
 {\it e.g.} $ \Lambda = \Lambda_{\rm weak} $,
 	this limit would make futile any efforts of detecting interactions \eqref{SM_divgt}
 	directly. 
-	
+	We note that even though certain linear combinations \eqref{SUSY_prot} might
+	be protected by supersymmetry, below the supersymmetry breaking 
+	scale they are unprotected and therefore subject to constraints \eqref{limit_dim3}. 
 	
 	
 	Leaving ourselves only with UV-safe operators, 
@@ -1957,22 +2003,24 @@ $ C^{\mu\nu\rho}_\el $
 % first line
 \notag
 	\mathcal{L}_{\rm SM\ 1~GeV}^{\rm Higgs-induced} & ~~=~~
-	v\,r_{q}^{\mu\nu\rho} \cdot \ov{q}\, \md_{(\mu} \sigma_{\nu)\rho} q   ~~+~~
-	v\,r_{\psi}^{\mu\nu\rho} \cdot \ov{\psi}\, \md_{(\mu} \sigma_{\nu)\rho} \psi 
+	\frac{v}{\sqrt{2}}\,r_{q}^{\mu\nu\rho} \cdot \ov{q}\, \md_{(\mu} \sigma_{\nu)\rho} q   ~~+~~
+	\frac{v}{\sqrt{2}}\,r_{\psi}^{\mu\nu\rho} \cdot \ov{\psi}\, \md_{(\mu} \sigma_{\nu)\rho} \psi 
+	~~+~~
+	\text{h.c.}~
 	\\
 % second line
 	& 
 \label{SM_Higgs_1GeV}
 	~~+~~
-	v^2\,\varsigma_\psi^{\mu\nu} \cdot \psi^T \sigma_{\mu\nu} \psi
+	\frac{v^2}{2}\,\varsigma_\nu^{\mu\nu} \cdot \nu^T \sigma_{\mu\nu} \nu
 	~~+~~
 	\text{h.c.}~,
 \end{align}
 	where $ q = u, d $ and $ \psi = e, \nu $.
-	The $ \varsigma^{\mu\nu} $ operator is \emph{protected}.
+%	The $ \varsigma^{\mu\nu} $ operator is \emph{protected}.
 
 	The interactions in \eqref{SM_quark_1GeV}-\eqref{SM_gauge_1GeV} 
-	can be further subdivided into two groups.
+	can be divided into two groups.
 	The first group is formed by the operators which modify dispersion relations
 	and grow with energy \cite{MP:}, which we term the UV-enhanced operators.
 	The second group, correspondingly, hosts all other
@@ -2004,7 +2052,7 @@ $ C^{\mu\nu\rho}_\el $
 	constraints on dim 3 operators
 	\\
 \hline
-	\multicolumn{3}{|l|}{\quad Operators growing with energy (kinematic operators)} \\
+	\multicolumn{3}{|l|}{\quad Operators growing with energy (UV-enhanced operators)} \\
 \hline
 	$ C_{q}^{\mu\nu\rho} $ $ C_{q,5}^{\mu\nu\rho} $
 	$ C_l^{\mu\nu\rho} $  $ C_{l,5}^{\mu\nu\rho} $
@@ -2028,7 +2076,17 @@ $ C^{\mu\nu\rho}_\el $
 \hline
 \end{tabular}
 \end{table}
-{\bf need to include lepton number violating operators}
+
+	We outline the main sources of constraints applicable to the low-energy 
+	LV interactions.
+	
+	--- {\it Ultra-high energy cosmic rays}. 
+
+	--- {\it Precision experiments}. 
+
+	--- {\it Electric dipole moments}. 
+
+	--- {\it Neutrino phenomenology}. 
 	
 	The UV-enhanced operators are 
 	known to be severely constrained by the
@@ -2059,7 +2117,7 @@ $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
 	The current couplings $ c_q^\mu $, $ D^{\mu\nu\rho}_q $  when averaged over the nucleon, 
 	will produce an interaction of the nucleus with the external electromagnetic field.
 	Tensor operators
-	involving gluons $ D^{\mu\nu\rho}_{qg} $, lead to similar effects and slightly tighte bounds upon 
+	involving gluons $ D^{\mu\nu\rho}_{qg} $, lead to similar effects and slightly tight bounds upon 
 	employing the naive dimensional estimates of the nucleon matrix elements
 \cite{Manohar:1983md}.
 	In contrast, any conceivable electromagnetic field which can be created in laboratory
@@ -2271,7 +2329,7 @@ because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\
 
 
 
-	Below we present the RG equations for kinematic LV operators above the EW
+	Below we present the RG equations for UV-enhanced LV operators above the EW
 	symmetry breaking scale. 
 	The Wilson coefficients are assumed to be flavor matrices given in the gauge basis.
 %%
@@ -2575,7 +2633,7 @@ because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\
 %	below the Electroweak symmetry breaking scale}
 %
 %
-	The RG equations for kinematic LV interactions below the EW scale read as:
+	The RG equations for UV-enhanced LV interactions below the EW scale read as:
 %%
 %% RG equations for fermionic operators below the EW scale
 %%
