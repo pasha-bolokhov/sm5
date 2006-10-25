@@ -36,6 +36,9 @@
 \newcommand{\ue}{{{\rm U}(1)}}
 \newcommand{\el}{{\rm EM}}
 \newcommand{\GeV}{{\rm GeV}}
+\newcommand{\Heff}{{\mathcal{H}_{\rm eff}}}
+\newcommand{\Leff}{{\mathcal{L}_{\rm eff}}}
+\newcommand{\LQCD}{{\Lambda_{\rm QCD}}}
 \newcommand{\uflavor}{\mathbf{1}_{\rm flavor}}
 %\newcommand{\su3}{{\rm SU}_{\rm C}(3)}
 \newcommand{\lgr}{\left\lgroup}
@@ -1621,7 +1624,8 @@ the results in Appendix \ref{RG_SM}.
 
 	We now discuss typical limits on LV dimension 5 operators, 
 	which can be inferred from experimental tests 
-	of Lorentz symmetry in laboratory and from astrohpysical observations.
+	of Lorentz symmetry in laboratory, astrophysical observations and
+	data on neutrino oscillations.
 	Given the abundance of non-minimal interactions we have derived in 
 	the last section, it would be useful to separate them in several classes 
     and deduce a typical experimental sensitivity within each class.
@@ -1648,7 +1652,7 @@ the results in Appendix \ref{RG_SM}.
 	interactions involving Higgs and weak bosons. 
 	
 
-	For most of the phenomenological applications it 
+	For most of phenomenological applications it 
  is useful to rewrite the LV  Lagrangian at the normalization scale of
 	around $ 1~\GeV $, the borderline of applicability for the quark-gluon description.
 	At this scale it is useful to abandon chiral fermions and combine the left- and right-handed
@@ -1699,7 +1703,7 @@ fields into
 %	since for them the relations \eqref{gauge_mass_basis} would have no
 %	meaning.
 
-	For phenomenological reasons, we need to ensure that the operators that we have
+	For consistency of the effective theory, we need to ensure that the operators that we have
 	introduced do not transmute into lower dimensions, and thereby not develop quadratic
 	divergencies. 
 	We can formulate certain criteria to ensure that operators cannot induce lower dimensional
@@ -1712,17 +1716,28 @@ fields into
 \item	{\it Supersymmetry}. In the supersymmetric Standard Model, dimension three LV operators
 	do not exist at all. 
 	Therefore, as long as the theory is considered above the supersymmetry breaking scale, 
-	those operators which fall into supermultiplets of the LV MSSM, are protected.
+	those operators which fall into supermultiplets of the LV MSSM, are protected
+\cite{Bolokhov:2005cj}.
+	By cancellation of loop contributions due to superpartners, the quadratic divergencies
+	turn into logarithmic ones if supersymmetry is exact. 
 	It turns out that there is only one type of such operators
 \begin{equation}
 \label{SUSY_prot}
-	bla-bla.
+	\mathcal{L}_{\rm SUSY} ~~=~~
+	\wt{c}_{\rm SUSY,Q}^\mu \cdot 
+	\left( Y_Q g'\, \ov{Q} \gamma^\lambda \wt{F}_{\mu\lambda} Q   ~~+~~
+	g\,  \ov{Q} \gamma^\lambda \wt{W}_{\mu\lambda} Q   ~~+~~
+	g_3\, \ov{Q} \gamma^\lambda \wt{G}_{\mu\lambda} Q 
+	\right)  ~~+~~
+	\ldots~,
 \end{equation}	
-	Note that in our case supersymmetry does not help much with the problem of quadratic 
-	divergencies, since we are now considering $ 1~\GeV $ physics where supersymmetry
-	is broken in any case. 
-	Therefore, the above operators are allowed to induce quadratic divergencies, which will
-	be stabilized at the supersymmetry breaking scale. 
+	(here, $ Y_Q $ refers to the hypercharge of the left quark doublet)
+	which, in the case of quarks, must form a certain linear combination to be part of 
+	a supermultiplet.
+	Linear combinations orthogonal to the above one are not supersymmetric and therefore
+	not protected.	
+	When the supersymmetry is broken, the above operators are allowed to induce 
+	quadratic divergencies, which will be stabilized at the supersymmetry breaking scale. 
 
 \item	{\it $T$-invariance}. Since in the Standard Model one needs multiple loops to flip
 	$ T $-parity of interactions, we assume that the operators which do not have dimension
@@ -1858,11 +1873,11 @@ on dimension 3 LV terms
 	| b^\mu | ~=~ ({\rm loop\ factor})\, 
 		\Lambda^2 | \wt{c}^\mu |  ~\lesssim~ 10^{-29}~{\rm GeV}~.
 \end{equation}
-	Even in the very conservative assumption about the UV cutof, 
+	Even in the very conservative assumption about the UV cutoff, 
 {\it e.g.} $ \Lambda = \Lambda_{\rm weak} $,
 	this limit would make futile any efforts of detecting interactions \eqref{SM_divgt}
 	directly. 
-	We note that even though certain linear combinations \eqref{SUSY_prot} might
+	We again note that even though certain linear combinations \eqref{SUSY_prot} might
 	be protected by supersymmetry, below the supersymmetry breaking 
 	scale they are unprotected and therefore subject to constraints \eqref{limit_dim3}. 
 	
@@ -1951,7 +1966,7 @@ on dimension 3 LV terms
 %	\text{h.c.}
 \end{align}
 
-	Passing to the gauge sector, we refer to Eq. \eqref{SM_gauge}.
+	Passing to the gauge sector, we refer to Eq.~\eqref{SM_gauge}.
 %	As agreed, we ignore the weak boson part, $ C_{\sul}^{\mu\nu\rho} $.
 	At low energies the LV lagrangian in the gauge sector
 	takes the form
@@ -2009,12 +2024,14 @@ $ C^{\mu\nu\rho}_\el $
 	\text{h.c.}~,
 \end{align}
 	where $ q = u, d $ and $ \psi = e, \nu $.
+	The last operator in Eq.~\eqref{SM_Higgs_1GeV} violates the lepton number by 
+	two, and in the low-energy theory can only exist for neutrinos.
 %	The $ \varsigma^{\mu\nu} $ operator is \emph{protected}.
 
 	The interactions in \eqref{SM_quark_1GeV}-\eqref{SM_gauge_1GeV} 
 	can be divided into two groups.
 	The first group is formed by the operators which modify dispersion relations
-	and grow with energy \cite{MP:}, which we term the UV-enhanced operators.
+	and grow with energy \cite{MP:}, which we term the {\it UV-enhanced operators}.
 	The second group, correspondingly, hosts all other
 	structures, which we designate as ``soft'' LV interactions  
 	(see Table \ref{constr_table}).
@@ -2056,17 +2073,24 @@ $ C^{\mu\nu\rho}_\el $
 	high energy cosmic rays
 	\\
 \hline
-	\multicolumn{3}{|l|}{\quad Soft LV Interactions} \\
+	\multicolumn{3}{|l|}{\quad Soft LV interactions} \\
 \hline
-	$ c^\mu_{q,5} $ $ D^{\mu\nu\rho}_{q,5} $ &
-	$ \lesssim 10^{-28}~{\rm GeV}^{-1} $     &
+	$ c^\mu_{q,5} $ $ D^{\mu\nu\rho}_{q,5} $
+	$ D_{qg}^{\mu\nu\rho} $  $ D_q^{\mu\nu\rho} $  $ r_q^{\mu\nu\rho} $ &
+	$ \lesssim 10^{-28-30}~{\rm GeV}^{-1} $     &
 	nuclear spin precession \\
 \hline
 	$ c^\mu_{q,5} $ $ D^{\mu\nu\rho}_{q,5} $ 
-	$ D^{\mu\nu\rho}_{qq,5} $ 
+	$ D^{\mu\nu\rho}_{qg,5} $ 
 	$ c^\mu_{e,5} $ $ D^{\mu\nu\rho}_{e,5} $ &
 	$ \lesssim 10^{-25}~e{\rm cm} $          &
 	atomic and nuclear EDMs \\
+\hline
+	\multicolumn{3}{|l|}{\quad $ \Delta L ~=~ 2 $ interaction} \\
+\hline
+	$ \varsigma_\nu^{\mu\nu} $          &
+	$ \lesssim 10^{-23-24}~\GeV^{-1} $       &
+	data on neutrino oscillations \\
 \hline
 \end{tabular}
 \end{table}
@@ -2076,7 +2100,8 @@ $ C^{\mu\nu\rho}_\el $
 	stringent bounds on UV-enhanced operators in certain sectors of the Standard Model, 
 	depending on relative magnitude of LV sources in these sectors
 	\cite{Gagnon:2004xh}. 
-	Renormalization group equations (see Appendix \ref{RG_SM}) then spread these limits on other sectors.
+	Renormalization group equations (see Appendix \ref{RG_SM}) then spread these limits on the 
+	other sectors.
 	The UV-enhanced operators modify the dispersion relations of the particles, and this would 
 	allow the nucleons in the cosmic rays to emit photons or light leptons, and therefore
 	efficiently  lose all their energy before reaching the Earth. 
@@ -2084,84 +2109,136 @@ $ C^{\mu\nu\rho}_\el $
 	LV of the order of $ 10^{-33-34}~\GeV $. 
 	Not all ``corners'' of the parameter space of UV-enhanced operators are covered by these
 	limits.
-	Sufficiently strong LV in the up quark sector would allow protons of the cosmic
+	Sufficiently strong LV in the up quark sector would allow protons in the cosmic
 	rays to decay into $ \Delta^{++} $ which would be stable at high energies
 	\cite{Gagnon:2004xh}.
 	
 	{\it Precision experiments}. 
 	Astrophysical constraints are not applicable to soft LV interactions, since the latter do not
 	modify propagation of particles.
-	For this type interactions the bounds from low-energy precision experiments are applicable.
+	For this type of interactions the bounds from low-energy precision experiments are in order.
 	The strongest limits occur when an operator induces the interaction 
-	of nuclear spin with the nuclear electric field, typical scale of which
-	in heavy nuclei can reach $ \sim (50~{\rm MeV})^2 $.
-	Known limits 
-\cite{Adelberger:1998ew} 
-	on such interactions allow one to estimate typical constraints on operators 
-$ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
-\cite{Bolokhov:2005cj}:
-\begin{equation}
-\label{nucl_spin}
-	|c^\mu_{q,5}|,~~ |D^{\mu\nu\rho}_{q,5}| ~~\lesssim~~~
-	10^{-28}~{\rm GeV}^{-1}~.
-\end{equation}
-	
-
-	--- {\it Electric dipole moments}. 
-
-	--- {\it Neutrino phenomenology}. 
-	
-	The UV-enhanced operators are 
-	known to be severely constrained by the
-	observations of high energy cosmic rays 
-\cite{Gagnon:2004xh}.
-	These constraints are an exception to our consideration of the low energy 
-	effective lagrangian, since the cosmic rays are believed to have the
-	energies of $ \sim 10^{11} $~GeV. {\bf I am not sure it is correct. What matters 
-	is $q^2$, which might not be very large}
-	Combined with the renormalization group mixing
-	(see Appendix \ref{RG_SM}), one can extend
-	the limits onto the UV-enhanced operators in all sectors of the Standard Model.
-	
-
-	The bounds on the soft operators possess a hierarchy in the 
-	intrinsic energy scales of the effects where they can be probed for.
-	The strongest limits occur when an operator induces the interaction 
-	of nuclear spin with the nuclear electric field, typical scale of which
-	in heavy nuclei can reach $ \sim (50~{\rm MeV})^2 $.
-	Known limits ({\bf ref}?) on such interactions allow one to estimate typical constraints on operators 
-$ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
-\cite{Bolokhov:2005cj}:
-\begin{equation}
-\label{nucl_spin}
-	|c^\mu_{q,5}|,~~ |D^{\mu\nu\rho}_{q,5}| ~~\lesssim~~~
-	10^{-28}~{\rm GeV}^{-1}~.
-\end{equation}
-	The current couplings $ c_q^\mu $, $ D^{\mu\nu\rho}_q $  when averaged over the nucleon, 
-	will produce an interaction of the nucleus with the external electromagnetic field.
-	Tensor operators
-	involving gluons $ D^{\mu\nu\rho}_{qg} $, lead to similar effects and slightly tight bounds upon 
-	employing the naive dimensional estimates of the nucleon matrix elements
+	of nuclear spin with the nuclear electric 
+%field, typical scale of which
+%	in heavy nuclei can reach $ \sim (50~{\rm MeV})^2 $.
+	or chromomagnetic field. 
+	One finds that the operators $ D_q^{\mu\nu\rho} $, $ D_{qg}^{\mu\nu\rho} $ 
+	and $ r_q^{\mu\nu\rho} $, 
+	when averaged over the nucleus give an effective interaction
+\[
+	\Leff ~~\propto~~ \ov{N} \partial_{(\mu} \sigma_{\nu)\rho} N ~,
+\]
+	multiplied by a coefficient $ \sim \LQCD $ which can be estimated by a naive dimensional
+	counting of the nucleon matrix element
 \cite{Manohar:1983md}.
-	In contrast, any conceivable electromagnetic field which can be created in laboratory
-	is much weaker than a typical nuclear or atomic field.
-	For a laboratory setup of $ |\vec{E}{}_{\rm ext}| \sim $ 10~kV/cm 
-	$ \hookrightarrow 1~{\rm eV}^2 $, 
-	and one loses about sixteen orders of magnitude in sensitivity in any experimental set-up that 
-would employ the external fields to search for soft LV interactions.
+	For a non-relativistic nucleus this induces the interaction of the nuclear spin with
+	the external preferred directions.
+	Known limits
+\cite{Berglund:}
+%\cite{Adelberger:1998ew} 
+	on interaction of nuclear spin with external directions allow one to estimate typical
+	constraints on operators
+\[
+	| D_{qg}^{0ik} |, ~~| D_{qg,5}^{ijk} |  ~~<~~ 10^{-30}~\GeV^{-1},
+	\qquad
+	| r_q^{0ik} | ~~<~~ 10^{-31}~\GeV^{-1}~.
+\]
+	The limits on the interactions $ D_q^{\mu\nu\rho} $, $ D_{q,5}^{\mu\nu\rho} $ and
+	$ c_q^\mu $ are less strong by a factor of $ \alpha $ due to the suppression of the
+	nuclear electric field relative to the chromomagnetic fieldstrength.
+	In constraining the leptonic operators $ D_l^{\mu\nu\rho} $ and $ r_e^{\mu\nu\rho} $ one
+	loses the advantage of using the strong internal nuclear fields, 
+	and the corresponding bounds are weakened by the ratio of the characteristic atomic 
+	energy scale to the nuclear energy scale $ p_{at}/p_{nucl} \sim \alpha m_e / \LQCD $.
+
+%	Known limits 
+%\cite{Adelberger:1998ew} 
+%	on such interactions allow one to estimate typical constraints on operators 
+%$ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
+%\cite{Bolokhov:2005cj}:
+%\begin{equation}
+%\label{nucl_spin}
+%	|c^\mu_{q,5}|,~~ |D^{\mu\nu\rho}_{q,5}| ~~\lesssim~~~
+%	10^{-28}~{\rm GeV}^{-1}~.
+%\end{equation}
 	
-	Some of the soft LV interactions do not lead to a coupling of a spin to an external direction, 
-because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ and
-	$ D^{\mu\nu\rho}_{qg,5} $,  can be shown to induce the $CPT$-odd EDMs.
-\cite{Bolokhov_EDM}.
-%	When averaged over a nucleon they create a CPT-odd coupling of the external electric 
-%	field and the nuclear spin. 
-%	Electron operators $ c_{l,5}^\mu $ and $ D_{l,5}^{\mu\nu\rho} $ similarly induce
-%	EDMs in paramagnetic atoms. 
-	Current limits on atomic and nuclear EDMs bound these interactions
-	at the $ \sim 10^{-12}~{\rm GeV}^{-1} $ 
-% $ \sim 10^{-13}~{\rm GeV}^{-1} $
-	level.
+
+	{\it Electric dipole moments}. 
+	The operators $ D_{q,5}^{\mu\nu\rho} $, $ D_{qg,5}^{\mu\nu\rho} $ and
+	$ D_{l,5}^{\mu\nu\rho} $, written in terms of low-energy effective Hamiltonian
+	possess the signature of Electric Dipole Moment interactions.
+	Averaged over the nucleus, the first two induce nuclear EDMs, for which the 
+	existing limits can be used to constrain the amount of Lorentz violation
+\cite{Bolokhov:2006yx}:
+\[
+	|c_{q,5}^0|,~~ | D_{q,5}^{i0k} | ~~\lesssim~~ 10^{-12}~\GeV^{-1}~.
+\]
+	The electron operator $ D_{l,5}^{\mu\nu\rho} $ applied to paramagnetic atoms induces
+	the electric dipole moment of the atom, and this way a bound of the similar strength
+	is obtained
+\cite{Bolokhov:2006yx}.
+
+	{\it Neutrino phenomenology}.
+	The operator $ \varsigma^{\mu\nu}_\nu \cdot \nu^T \sigma_{\mu\nu} \nu $ is capable
+	of changing the patterns of neutrino oscillations.
+	Constraints from reactor and atmospheric neutrino oscillation data can be used 
+\cite{Choubey:2003ke}
+	to limit various flavor components of $ \varsigma_\nu^{\mu\nu} $:
+\[
+	| \varsigma_\nu^{\mu\nu} | ~~\lesssim~~ 10^{-23-24}~\GeV^{-1}~.
+\]
+	
+%	The UV-enhanced operators are 
+%	known to be severely constrained by the
+%	observations of high energy cosmic rays 
+%\cite{Gagnon:2004xh}.
+%	These constraints are an exception to our consideration of the low energy 
+%	effective lagrangian, since the cosmic rays are believed to have the
+%	energies of $ \sim 10^{11} $~GeV. {\bf I am not sure it is correct. What matters 
+%	is $q^2$, which might not be very large}
+%	Combined with the renormalization group mixing
+%	(see Appendix \ref{RG_SM}), one can extend
+%	the limits onto the UV-enhanced operators in all sectors of the Standard Model.
+%	
+%
+%	The bounds on the soft operators possess a hierarchy in the 
+%	intrinsic energy scales of the effects where they can be probed for.
+%	The strongest limits occur when an operator induces the interaction 
+%	of nuclear spin with the nuclear electric field, typical scale of which
+%	in heavy nuclei can reach $ \sim (50~{\rm MeV})^2 $.
+%	Known limits ({\bf ref}?) on such interactions allow one to estimate typical constraints on operators 
+%$ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ as
+%\cite{Bolokhov:2005cj}:
+%\begin{equation}
+%\label{nucl_spin}
+%	|c^\mu_{q,5}|,~~ |D^{\mu\nu\rho}_{q,5}| ~~\lesssim~~~
+%	10^{-28}~{\rm GeV}^{-1}~.
+%\end{equation}
+%	The current couplings $ c_q^\mu $, $ D^{\mu\nu\rho}_q $  when averaged over the nucleon, 
+%	will produce an interaction of the nucleus with the external electromagnetic field.
+%	Tensor operators
+%	involving gluons $ D^{\mu\nu\rho}_{qg} $, lead to similar effects and slightly tight bounds upon 
+%	employing the naive dimensional estimates of the nucleon matrix elements
+%\cite{Manohar:1983md}.
+%	In contrast, any conceivable electromagnetic field which can be created in laboratory
+%	is much weaker than a typical nuclear or atomic field.
+%	For a laboratory setup of $ |\vec{E}{}_{\rm ext}| \sim $ 10~kV/cm 
+%	$ \hookrightarrow 1~{\rm eV}^2 $, 
+%	and one loses about sixteen orders of magnitude in sensitivity in any experimental set-up that 
+%would employ the external fields to search for soft LV interactions.
+%	
+%	Some of the soft LV interactions do not lead to a coupling of a spin to an external direction, 
+%because of the opposite $T$-parity.   Such operators, $ c^\mu_{q,5} $, $ D^{\mu\nu\rho}_{q,5} $ and
+%	$ D^{\mu\nu\rho}_{qg,5} $,  can be shown to induce the $CPT$-odd EDMs.
+%\cite{Bolokhov:2006yx}.
+%%	When averaged over a nucleon they create a CPT-odd coupling of the external electric 
+%%	field and the nuclear spin. 
+%%	Electron operators $ c_{l,5}^\mu $ and $ D_{l,5}^{\mu\nu\rho} $ similarly induce
+%%	EDMs in paramagnetic atoms. 
+%	Current limits on atomic and nuclear EDMs bound these interactions
+%	at the $ \sim 10^{-12}~{\rm GeV}^{-1} $ 
+%% $ \sim 10^{-13}~{\rm GeV}^{-1} $
+%	level.
 	
 
 %	Although in most cases direct measurements and observations do not involve 
