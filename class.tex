@@ -1112,7 +1112,7 @@ sectors of the SM.
 	In the resulting Lagrangian we have to abandon the $C$-parity eigenstates, 
     \eqref{QED_matter} and list operators using $V-A$ and $V+A$ combinations of Dirac matrices. 
 	
-	In QED
+	Since in QED
 %% commutator of covariant derivatives in QED
 \begin{equation}
 \label{Fmn}
@@ -1366,7 +1366,7 @@ $ \ov{Q}\, \gamma^\lambda G_{\mu\lambda} Q $
 	\ov{\psi}{}_e\, \gamma_{(\mu} F_{\rho)\nu}\, \psi_e
 	~.
 \end{eqnarray}
-	As one casee, the absence of strong interactions for leptons
+	As one can see, the absence of strong interactions for leptons
     makes  \eqref{SM_lepton} more compact compared to  
 	\eqref{SM_quark}.
 
@@ -1652,7 +1652,7 @@ the results in Appendix \ref{RG_SM}.
 	interactions involving Higgs and weak bosons. 
 	
 
-	For most of phenomenological applications it 
+	For most phenomenological applications it 
  is useful to rewrite the LV  Lagrangian at the normalization scale of
 	around $ 1~\GeV $, the borderline of applicability for the quark-gluon description.
 	At this scale it is useful to abandon chiral fermions and combine the left- and right-handed
@@ -2187,6 +2187,12 @@ $ C^{\mu\nu\rho}_\el $
 \[
 	| \varsigma_\nu^{\mu\nu} | ~~\lesssim~~ 10^{-23-24}~\GeV^{-1}~.
 \]
+
+	We comment that the constraints on LV operators displayed in this section do not 
+	generically restrict all the components of corresponding LV tensors.
+	However, a customary argument applies, that the ``unobservable'' parts of the tensors
+	could induce the detectable effects due to the Lorentz boost caused by motion of the Earth 
+	relative to the Galaxy, and so cannot exceed much more the observable components.
 	
 %	The UV-enhanced operators are 
 %	known to be severely constrained by the
@@ -2318,13 +2324,25 @@ $ C^{\mu\nu\rho}_\el $
 	The wider gauge group, and the diversity of field content lead
 	to a sufficiently broader set of LV structures, although the gauge
 	sector still keeps its simplicity.
-	The field content essentially reduces below the EW scale,
-	and so does the spectrum of LV operators.
-	Imposing a constraint of absence of uncontrollable divergencies,
+%	The field content essentially reduces below the EW scale,
+%	and so does the spectrum of LV operators.
+	Phenomenologically important is the effective theory below the EW scale, where
+	the spectrum of LV operators significantly reduces. 
+	In the effective theory, interactions which induce quadratic divergencies 
+	are severely constrainted, besides of just introducing a naturalness problem. 
+	Imposing a requirement of absence of uncontrollable divergencies,
 	one obtains a consistent effective theory with a narrower set of LV terms, which 
 	can be bounded by observations.
+	We divide the interactions of the effective low-energy theory into two groups,
+	the first one composed of the operators which grow with the energy (UV-enhanced
+	operators), and the second group including other, soft interactions. 
 	We show typical limits that can be placed on the magnitude of these
-	interactions.
+	interactions.	
+	The bounds on UV-enhanced operators are the strongest as they come from astrophysical observations.
+	Soft interactions can only be bounded by laboratory experiments (measurements of spin precession,
+	electric dipole moments), which still impose very strong limits on such operators.
+	Finally, the dimension five LV Standard Model admits a lepton-number violating
+	operator, the bounds on which can be obtained from neutrino physics.
 %	Other operators can be bounded by involving RG mixing arguments.
 	Although some operators seem to escape direct constraints, the RG
 	flow is expected to spread the limits over all the interactions.
@@ -2347,7 +2365,8 @@ $ C^{\mu\nu\rho}_\el $
 %	LV properties, in the low energy regime will always be described
 %	by some of the operators we have built.
 %	Reversely, in more abstract theories with Lorentz violation, 
-	In more abstract (and thus less accessible) theories with Lorentz violation, 
+	In more abstract (and thus less accessible) theories with Lorentz violation 
+	({\it e.g.} in those arising from non-commutative models or from quantum gravity),
 	if they appeal for phenomenological
 	viability, we can expect that the LV behavior in the low energy regime will 
 	always be described by some of the operators we have built.
@@ -3351,9 +3370,10 @@ $ C^{\mu\nu\rho}_\el $
 \label{young}
 
 	To build irreducible tensors of an arbitrary rank one can use
-	Young tableaux. 
+	the Young tableaux. 
 	We describe here a recipe how to expand a tensor of a specific
-	rank into its irreducible components.
+	rank into its irreducible components\footnote{
+For more details, the reader is referred to \cite{Hamermesh}.}.
 	In the text we most extensively exploit rank three tensors, which
 	we here now use as a non-trivial but rather simple example.
 
@@ -3471,49 +3491,93 @@ $ C^{\mu\nu\rho}_\el $
 	T^{\mu\nu\rho} ~-~ T^{\nu\mu\rho} ~+~ T^{\rho\nu\mu}
 	~-~  T^{\nu\rho\mu}~.
 \]
-	To provide a slightly more complicated example of applying
-	the (anti)symmetrization rules we demonstrate
-	a diagram corresponding to an irreducible component of a 
-	four-tensor:
-\[
-\raisebox{-0.6cm}{\includegraphics[width=1.5cm,height=1.5cm,keepaspectratio]
- {d4_sample.eps}}
-	~~~~\longrightarrow~~~~
-	T^{[\mu\nu\rho]\lambda} ~+~ T^{[\lambda\nu\rho]\mu}~.
-\]
+%	To provide a slightly more complicated example of applying
+%	the (anti)symmetrization rules we demonstrate
+%	a diagram corresponding to an irreducible component of a 
+%	four-tensor:
+%\[
+%\raisebox{-0.6cm}{\includegraphics[width=1.5cm,height=1.5cm,keepaspectratio]
+% {d4_sample.eps}}
+%	~~~~\longrightarrow~~~~
+%	T^{[\mu\nu\rho]\lambda} ~+~ T^{[\lambda\nu\rho]\mu}~.
+%\]
 
 	All four components of \eqref{rank3_diags} 
 	(weighed by appropriate coefficients) sum into
 	the original tensor $ T^{\mu\nu\rho} $:
-\[
+\begin{equation}
+\label{list_3rank}
 	T^{\mu\nu\rho} ~=~
 	\frac{1}{3!}\, \left\lgroup S^{\mu\nu\rho} ~+~
 				 A^{\mu\nu\rho} ~+~
 				 2 T_1^{\mu\nu\rho} ~+
 				 2 T_2^{\mu\nu\rho} \right\rgroup~.
-\]
+\end{equation}
 	
 	The last step to perform is subtract from each component
 	all traces obtained by contraction of any two indices which
 	are not antisymmetrized (contraction of antisymmetrized indices is
 	trivial).
-	The solution can be sought by means of a tensor of a rank
-	$ r - 2 $:
+%	The solution can be sought by means of a tensor of a rank
+%	$ r - 2 $:
+%\begin{equation}
+%\label{subtr_traces}
+%	T_{i\;{\rm (irr)}}^{\mu\nu\rho\lambda...} ~=~
+%	T_i^{\mu\nu\rho\lambda...}  ~-~  a^{\rho\lambda...}g^{\mu\nu} 
+%				  ~+~  a^{\rho\mu...}g^{\lambda\nu} ~+~ ...~,
+%\end{equation}
+	The solution can be sought by means of a tensor of a rank less by two:
 \begin{equation}
 \label{subtr_traces}
-	T_{i\;{\rm (irr)}}^{\mu\nu\rho\lambda...} ~=~
-	T_i^{\mu\nu\rho\lambda...}  ~-~  a^{\rho\lambda...}g^{\mu\nu} 
-				  ~+~  a^{\rho\mu...}g^{\lambda\nu} ~+~ ...~,
+	T_{i\;{\rm (irr)}}^{\mu\nu\rho} ~=~
+	T_i^{\mu\nu\rho}  ~-~  a_i^{\rho}g^{\mu\nu} 
+			  ~+~  a_i^{\mu}g^{\rho\nu} ~+~ ...~,
 \end{equation}
-	where $ T_i^{\mu\nu\rho\lambda...} $ is the $ i $-the component
+	where $ T_i^{\mu\nu\rho} $ is the $ i $-the component
 	obtained from the corresponding Young tableau.
-	The traces part in the r.h.s. of \eqref{subtr_traces} should 
-	possess the same symmetries as $ T_i^{\mu\nu\rho\lambda...} $
+	The trace part in the r.h.s. of \eqref{subtr_traces} should 
+	possess the same symmetries as $ T_i^{\mu\nu\rho} $
 	so as to promote these symmetries to the l.h.s.
 	Contracting any two indices in equation \eqref{subtr_traces} and
 	requiring the result to vanish one can obtain the explicit expression
-	for the trace $ a^{\rho\lambda..} $.
-
+	for the trace $ a_i^{\rho} $.
+	For the tensors listed in Eq.~\eqref{list_3rank} one obtains:
+\begin{align}
+\label{irr_3rank}
+% first line
+\notag
+	& S^{\mu\nu\rho}_{\rm (irr)} && ~~=~~
+		S^{\mu\nu\rho} ~~-~~ \frac{1}{6} 
+		\left\lgroup b^\mu g^{\nu\rho} ~+~ b^\nu g^{\rho\mu} ~+~ b^\rho g^{\mu\nu} \right\rgroup
+		~,
+		&&
+		b^\mu ~=~ S^{\mu\lambda\lambda}~,
+	\\
+% second line
+	& A^{\mu\nu\rho}_{\rm (irr)} && ~~=~~ A^{\mu\nu\rho}~, 
+	\\
+% third line 
+\notag
+	& T^{\mu\nu\rho}_{1\;\rm (irr)} && ~~=~~
+		T_1^{\mu\nu\rho}   ~~-~~
+		\frac{1}{3} \left\lgroup  a_{(1)}^{(\mu} g^{\nu)\rho} ~-~
+				    2\, a_{(1)}^\rho g^{\mu\nu} 
+			    \right\rgroup~,
+		&&
+		a_{(1)}^\mu ~=~ T^{\mu\lambda\lambda} ~-~ T^{\lambda\lambda\mu}~,
+	\\
+% fourth line 
+\notag
+	& T^{\mu\nu\rho}_{2\;\rm (irr)} && ~~=~~
+		T_2^{\mu\nu\rho}   ~~-~~
+		\frac{1}{3} \left\lgroup  a_{(2)}^{(\mu} g^{\rho)\nu} ~-~
+				    2\, a_{(2)}^\nu g^{\mu\rho} 
+			    \right\rgroup~,
+		&&
+		a_{(2)}^\mu ~=~ T^{\mu\lambda\lambda} ~-~ T^{\lambda\mu\lambda}
+	~.
+\end{align}
+	These arguments are easily generalized to tensors of arbitrary ranks.
 
 	
 \bibliographystyle{apsrev}
