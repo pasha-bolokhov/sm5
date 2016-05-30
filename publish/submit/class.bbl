@@ -1,0 +1,176 @@
+\begin{thebibliography}{23}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Colladay and Kostelecky}(1998)}]{Colladay:1998fq}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Colladay}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.~A.} \bibnamefont{Kostelecky}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D58}},
+  \bibinfo{pages}{116002} (\bibinfo{year}{1998}), \eprint{hep-ph/9809521}.
+
+\bibitem[{\citenamefont{Colladay and Kostelecky}(1997)}]{Kost1}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Colladay}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{V.~A.} \bibnamefont{Kostelecky}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D55}},
+  \bibinfo{pages}{6760} (\bibinfo{year}{1997}), \eprint{hep-ph/9703464}.
+
+\bibitem[{\citenamefont{Coleman and Glashow}(1999)}]{CG}
+\bibinfo{author}{\bibfnamefont{S.~R.} \bibnamefont{Coleman}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~L.} \bibnamefont{Glashow}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D59}},
+  \bibinfo{pages}{116008} (\bibinfo{year}{1999}), \eprint{hep-ph/9812418}.
+
+\bibitem[{\citenamefont{Mocioiu et~al.}(2000)\citenamefont{Mocioiu, Pospelov,
+  and Roiban}}]{MPR1}
+\bibinfo{author}{\bibfnamefont{I.}~\bibnamefont{Mocioiu}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pospelov}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Roiban}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B489}},
+  \bibinfo{pages}{390} (\bibinfo{year}{2000}), \eprint{hep-ph/0005191}.
+
+\bibitem[{\citenamefont{Anisimov et~al.}(2002)\citenamefont{Anisimov, Banks,
+  Dine, and Graesser}}]{UCSC}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Anisimov}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Banks}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Dine}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Graesser}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D65}},
+  \bibinfo{pages}{085032} (\bibinfo{year}{2002}), \eprint{hep-ph/0106356}.
+
+\bibitem[{\citenamefont{Carroll et~al.}(2001)\citenamefont{Carroll, Harvey,
+  Kostelecky, Lane, and Okamoto}}]{Carroll:2001ws}
+\bibinfo{author}{\bibfnamefont{S.~M.} \bibnamefont{Carroll}},
+  \bibinfo{author}{\bibfnamefont{J.~A.} \bibnamefont{Harvey}},
+  \bibinfo{author}{\bibfnamefont{V.~A.} \bibnamefont{Kostelecky}},
+  \bibinfo{author}{\bibfnamefont{C.~D.} \bibnamefont{Lane}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Okamoto}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{87}},
+  \bibinfo{pages}{141601} (\bibinfo{year}{2001}), \eprint{hep-th/0105082}.
+
+\bibitem[{\citenamefont{Carlson et~al.}(2001)\citenamefont{Carlson, Carone, and
+  Lebed}}]{Carlson:2001sw}
+\bibinfo{author}{\bibfnamefont{C.~E.} \bibnamefont{Carlson}},
+  \bibinfo{author}{\bibfnamefont{C.~D.} \bibnamefont{Carone}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~F.} \bibnamefont{Lebed}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B518}},
+  \bibinfo{pages}{201} (\bibinfo{year}{2001}), \eprint{hep-ph/0107291}.
+
+\bibitem[{\citenamefont{Jacobson et~al.}(2003)\citenamefont{Jacobson, Liberati,
+  and Mattingly}}]{Ted1}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Jacobson}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Liberati}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Mattingly}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{424}},
+  \bibinfo{pages}{1019} (\bibinfo{year}{2003}), \eprint{astro-ph/0212190}.
+
+\bibitem[{\citenamefont{Moore and Nelson}(2001)}]{Moore:2001bv}
+\bibinfo{author}{\bibfnamefont{G.~D.} \bibnamefont{Moore}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.~E.} \bibnamefont{Nelson}},
+  \bibinfo{journal}{JHEP} \textbf{\bibinfo{volume}{09}}, \bibinfo{pages}{023}
+  (\bibinfo{year}{2001}), \eprint{hep-ph/0106220}.
+
+\bibitem[{\citenamefont{Gleiser and Kozameh}(2001)}]{GK}
+\bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Gleiser}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{C.~N.} \bibnamefont{Kozameh}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D64}},
+  \bibinfo{pages}{083007} (\bibinfo{year}{2001}), \eprint{gr-qc/0102093}.
+
+\bibitem[{\citenamefont{Myers and Pospelov}(2003)}]{MP:}
+\bibinfo{author}{\bibfnamefont{R.~C.} \bibnamefont{Myers}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pospelov}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{90}},
+  \bibinfo{pages}{211601} (\bibinfo{year}{2003}), \eprint{hep-ph/0301124 and
+  gr-qc/0402028}.
+
+\bibitem[{\citenamefont{Sudarsky et~al.}(2002)\citenamefont{Sudarsky, Urrutia,
+  and Vucetich}}]{Vuc}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Sudarsky}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Urrutia}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Vucetich}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{89}},
+  \bibinfo{pages}{231301} (\bibinfo{year}{2002}), \eprint{gr-qc/0204027}.
+
+\bibitem[{\citenamefont{Bertolami et~al.}(1997)\citenamefont{Bertolami,
+  Colladay, Kostelecky, and Potting}}]{Bertolami:1996cq}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Bertolami}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Colladay}},
+  \bibinfo{author}{\bibfnamefont{V.~A.} \bibnamefont{Kostelecky}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Potting}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B395}},
+  \bibinfo{pages}{178} (\bibinfo{year}{1997}), \eprint{hep-ph/9612437}.
+
+\bibitem[{\citenamefont{Bolokhov and Pospelov}(2006)}]{Bolokhov:2006wu}
+\bibinfo{author}{\bibfnamefont{P.~A.} \bibnamefont{Bolokhov}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pospelov}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D74}},
+  \bibinfo{pages}{123517} (\bibinfo{year}{2006}), \eprint{hep-ph/0610070}.
+
+\bibitem[{\citenamefont{Groot~Nibbelink and
+  Pospelov}(2005)}]{GrootNibbelink:2004za}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Groot~Nibbelink}}
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pospelov}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{081601} (\bibinfo{year}{2005}), \eprint{hep-ph/0404271}.
+
+\bibitem[{\citenamefont{Bolokhov et~al.}(2005)\citenamefont{Bolokhov,
+  Nibbelink, and Pospelov}}]{Bolokhov:2005cj}
+\bibinfo{author}{\bibfnamefont{P.~A.} \bibnamefont{Bolokhov}},
+  \bibinfo{author}{\bibfnamefont{S.~G.} \bibnamefont{Nibbelink}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pospelov}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D72}},
+  \bibinfo{pages}{015013} (\bibinfo{year}{2005}), \eprint{hep-ph/0505029}.
+
+\bibitem[{\citenamefont{Carroll et~al.}(1990)\citenamefont{Carroll, Field, and
+  Jackiw}}]{CFJ}
+\bibinfo{author}{\bibfnamefont{S.~M.} \bibnamefont{Carroll}},
+  \bibinfo{author}{\bibfnamefont{G.~B.} \bibnamefont{Field}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Jackiw}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D41}},
+  \bibinfo{pages}{1231} (\bibinfo{year}{1990}).
+
+\bibitem[{\citenamefont{Gagnon and Moore}(2004)}]{Gagnon:2004xh}
+\bibinfo{author}{\bibfnamefont{O.}~\bibnamefont{Gagnon}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{G.~D.} \bibnamefont{Moore}},
+  \bibinfo{journal}{Phys. Rev.} \textbf{\bibinfo{volume}{D70}},
+  \bibinfo{pages}{065002} (\bibinfo{year}{2004}), \eprint{hep-ph/0404196}.
+
+\bibitem[{\citenamefont{Manohar and Georgi}(1984)}]{Manohar:1983md}
+\bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Manohar}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Georgi}},
+  \bibinfo{journal}{Nucl. Phys.} \textbf{\bibinfo{volume}{B234}},
+  \bibinfo{pages}{189} (\bibinfo{year}{1984}).
+
+\bibitem[{\citenamefont{Berglund~{\em et al}}(1995)}]{Berglund:}
+\bibinfo{author}{\bibfnamefont{C.~J.} \bibnamefont{Berglund~{\em et al}}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{75}},
+  \bibinfo{pages}{1879} (\bibinfo{year}{1995}).
+
+\bibitem[{\citenamefont{Bolokhov et~al.}(2006)\citenamefont{Bolokhov, Pospelov,
+  and Romalis}}]{Bolokhov:2006yx}
+\bibinfo{author}{\bibfnamefont{P.~A.} \bibnamefont{Bolokhov}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Pospelov}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Romalis}}
+  (\bibinfo{year}{2006}), \eprint{hep-ph/0609153}.
+
+\bibitem[{\citenamefont{Choubey and King}(2004)}]{Choubey:2003ke}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Choubey}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{S.~F.} \bibnamefont{King}},
+  \bibinfo{journal}{Phys. Lett.} \textbf{\bibinfo{volume}{B586}},
+  \bibinfo{pages}{353} (\bibinfo{year}{2004}), \eprint{hep-ph/0311326}.
+
+\bibitem[{\citenamefont{Hamermesh}(1989)}]{Hamermesh}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hamermesh}},
+  \bibinfo{journal}{Dover Publications, Inc.}  (\bibinfo{year}{1989}),
+  \bibinfo{note}{509 p}.
+
+\end{thebibliography}

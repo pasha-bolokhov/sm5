@@ -1,0 +1,429 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%  %%%%    %%%    %%%     %% %%%% %%    %%%%     %%% %%%% %%%%%%%%
+%%% %% %%% %%% %% %%% %% %%%%%%  %%% %%% %% %%%%% %%%%%% %% %%%%%%%%%
+%% %%%% %% %%% %% %%% %% %%%%%% % %% %%% %%% %%%% %%%%%%%  %%%%%%%%%%
+%%      %%    %%%    %%%    %%% %% % %%% %%% %%%% %%%%%%%  %%%%%%%%%%
+%% %%%% %% %%%%%% %%%%%% %%%%%% %%%  %%% %% %%%%% %%%%%% %% %%%%%%%%%
+%% %%%% %% %%%%%% %%%%%%     %% %%%% %%    %%%%     %%% %%%% %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                 INTRODUCTION TO LORENTZ VIOLATION
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RG equations for Dimension Five operators 
+%	RG equations for Dimension Five LV operators in the Standard Model
+	above the Electroweak symmetry breaking scale}
+
+	Above the Electroweak symmetry breaking scale, one has all
+	quark species and all lepton species present, and for
+	simplicity can take Higgs to ``emerge'' at this scale too.
+	In the matrix form, one-loop RG equations for LV operators take the
+	form
+	(the notations for the Wilson coefficients are introduced in 
+	section \ref{SM_3rank})
+\begin{align}
+% first line
+\notag
+	\mu \frac{\p}{\p\mu} 
+		\left \lgroup 
+			\begin{matrix}
+				\eta_L \\
+			   	\eta_Q \\
+				\eta_e \\
+				\eta_u \\
+				\eta_d
+			\end{matrix} 
+		\right \rgroup & =
+	\left[~
+		( A ~+~ G )\;
+		{\rm diag}
+		\begin{Bmatrix}
+			g'^2(\mu)\, Y_L^2  ~+~  g^2(\mu)\, T_W  \\
+			g'^2(\mu)\, Y_Q^2  ~+~  g^2(\mu)\, T_W  ~+~  g_3^2(\mu)\, T_S\\
+			g'^2(\mu)\, Y_e^2  \\
+			g'^2(\mu)\, Y_u^2  ~+~    g_3^2(\mu)\, T_S \\
+			g'^2(\mu)\, Y_d^2  ~+~    g_3^2(\mu)\, T_S \\
+		\end{Bmatrix}
+	\right.
+		~+~~ \\
+% second line
+\notag
+	&
+	\left.
+	\qquad\qquad\qquad+~~
+		\frac{1}{2} G_H \;
+		{\rm diag}
+		\begin{Bmatrix}
+		    \left\{\, \lambda_e \lambda_e^\dag  \,,\, \;\cdot\; \,\right\} \\
+		    \left\{\, \lambda_d \lambda_d^\dag + 
+					\lambda_u \lambda_u^\dag \,,\, \;\cdot\; \,\right\} \\
+		    \left\{\, 2\,\lambda_e^\dag \lambda_e  \,,\, \;\cdot\; \,\right\} \\
+		    \left\{\, 2\,\lambda_u^\dag \lambda_u  \,,\, \;\cdot\; \,\right\} \\
+		    \left\{\, 2\,\lambda_d^\dag \lambda_d  \,,\, \;\cdot\; \,\right\} \\
+		\end{Bmatrix}
+	~\right] 
+	\times
+	\left\lgroup
+	\begin{matrix}
+		\eta_L \\
+	   	\eta_Q \\
+		\eta_e \\
+		\eta_u \\
+		\eta_d
+	\end{matrix}
+	\right\rgroup
+	~~~+
+	\\
+% third line
+\notag
+	&
+	+~~~
+	K\, g'^2\, 
+		\left \lgroup
+		\begin{matrix}
+			- Y_L^2 \\
+			- Y_Q^2 \\
+			+ Y_e^2 \\
+			+ Y_u^2 \\
+			+ Y_d^2
+		\end{matrix}
+		\right \rgroup
+	\xi' (\mu) \cdot \mathbf{1}_{\rm flavor}
+	~~~+~~~	
+	K\, g^2(\mu)\,
+		\left \lgroup
+		\begin{matrix}
+			- T_W \\
+			- T_W \\
+			   0  \\
+			   0  \\
+			   0 
+		\end{matrix}
+		\right \rgroup
+	\xi(\mu) \cdot \mathbf{1}_{\rm flavor}
+	\\
+% fourth line
+\notag
+	&
+	+~~~
+	K\, g_3^2\, 
+		\left \lgroup
+		\begin{matrix}
+			    0   \\
+			- T_S   \\
+			    0   \\
+			  T_S   \\
+			  T_S  
+		\end{matrix}
+		\right \rgroup
+	\xi_3 (\mu) \cdot \mathbf{1}_{\rm flavor}
+	~~~+~~~
+	A_H\,
+	\left \lgroup
+		\begin{matrix}
+			\lambda_e\, \eta_e\, \lambda_e^\dag \\
+			\lambda_d\, \eta_d\, \lambda_d^\dag ~+~
+				\lambda_u\, \eta_u\, \lambda_u^\dag \\
+			2\, \lambda_e^\dag\, \eta_L\, \lambda_e \\
+			2\, \lambda_u^\dag\, \eta_Q\, \lambda_u \\
+			2\, \lambda_d^\dag\, \eta_Q\, \lambda_d \\
+		\end{matrix}
+	\right \rgroup
+	\\
+% fifth line
+\notag
+	&
+	\qquad\qquad\qquad\qquad\qquad\qquad\qquad
+	+~~~
+	K_H\,
+	\left \lgroup
+		\begin{matrix}
+			\lambda_e\, \lambda_e^\dag \\
+			\lambda_d\, \lambda_d^\dag ~-~ 
+				\lambda_u\, \lambda_u^\dag \\
+			- 2\, \lambda_e^\dag \lambda_e \\
+			+ 2\, \lambda_u^\dag \lambda_u \\
+			- 2\, \lambda_d^\dag \lambda_d \\
+		\end{matrix}
+	\right \rgroup
+	\cdot \kappa(\mu)~.
+%
+%
+% third line
+%
+%	
+%		\left\lgroup 
+%			g'^2 ( \mu )\, {\rm diag} 
+%				\left\lbrace
+%					\begin{matrix}
+%						Y_L^2 \\
+%						Y_Q^2 \\
+%						Y_e^2 \\
+%						Y_u^2 \\
+%						Y_d^2 
+%					\end{matrix}
+%				\right\rbrace
+%			~+~
+%			g^2 (\mu)\, {\rm diag}
+%				\left\lbrace
+%					\begin{matrix}
+%						T_W   \\
+%						T_W   \\
+%						0     \\
+%						0     \\
+%						0     
+%					\end{matrix}
+%				\right\rbrace
+%			~+~
+%			g_3^2 (\mu)\, {\rm diag}
+%				\left\lbrace
+%					\begin{matrix}
+%						0     \\
+%						T_S   \\
+%						0     \\
+%						T_S   \\
+%						T_S   
+%					\end{matrix}
+%				\right\rbrace
+%		\right\rgroup
+\end{align}
+%
+\begin{multline}
+% first line
+\notag
+	\mu \frac{\p}{\p\mu} 
+	\xi' ~~=~~
+	\frac{1}{2}\, ( - L )\, (g')^2 
+	\left\lgroup
+		-2 Y_L^2,\, -2 N_S Y_Q^2,\, Y_e^2,\, N_S Y_u^2,\, N_S Y_d^2
+	\right\rgroup
+	\times
+	\left\lgroup
+	\begin{matrix}
+		{\rm tr~}\eta_L \\
+		{\rm tr~}\eta_Q \\
+		{\rm tr~}\eta_e \\	
+		{\rm tr~}\eta_u \\
+		{\rm tr~}\eta_d
+	\end{matrix}
+	\right\rgroup
+	~~+
+	\\
+% second line
+\notag
+%	&
+	+~~~
+	\alpha_1\cdot (g')^2 \cdot \xi'(\mu)
+\end{multline}
+%
+\begin{equation}
+% first line
+\notag
+	\mu \frac{\p}{\p\mu} 
+	\xi 
+	~=~
+	\frac{1}{2}\, C_1\, L\, g^2 
+	\left\lgroup 
+	1\,,~ N_S
+	\right\rgroup
+	\left\lgroup
+	\begin{matrix}
+		{\rm tr~}\eta_L \\
+		{\rm tr~}\eta_Q 
+	\end{matrix}
+	\right\rgroup
+	~~+~~
+	\left(
+		\alpha_2\, g^2 
+		~-~
+		\frac{1}{2}
+		Q_Y\, N_W\, g^2 
+	\right)
+	\cdot \xi (\mu)
+\end{equation}
+%
+\begin{equation}
+% first line
+\notag
+	\mu \frac{\p}{\p\mu} 
+	\xi_3 
+	~=~
+	- \frac{1}{2}\, C_1\, L\, g_3^2 
+		\left\lgroup
+			-2\,,~1\,,~1
+		\right\rgroup
+	\left\lgroup
+	\begin{matrix}
+		{\rm tr~}\eta_Q \\
+		{\rm tr~}\eta_u \\
+		{\rm tr~}\eta_d
+	\end{matrix}
+	\right\rgroup
+	~~+~~
+	\left(
+		\alpha_3\, g_3^2 
+		~-~
+		\frac{1}{2}
+		Q_Y\, N_S\, g_3^2
+	\right)
+	\cdot \xi_3 (\mu)
+\end{equation}
+%
+\begin{align}
+% first line
+\notag
+	\mu \frac{\p}{\p\mu} \,
+	\kappa 
+	~=~&
+	( A^\kappa ~+~ G^\kappa )
+	\left[
+		(g')^2\, Y_H^2 ~+~ g^2\, T_W
+	\right] \cdot \kappa
+	~~+ 
+	\\
+% second line
+\notag
+	&
+	+~~
+	\frac{1}{2}\, F_H\, 
+	{\rm tr} 
+	\left[
+		\lambda_e\, \lambda_e^\dag
+		~+~
+		N_S\, \lambda_u\, \lambda_u^\dag
+		~+~
+		N_S\, \lambda_d\, \lambda_d^\dag
+	\right]
+	\cdot \kappa
+	~~+
+	\\
+% third line
+\notag
+	&
+	+~~
+	\frac{1}{2}
+	L_H\,
+	{\rm tr} 
+	\left[
+		N_S\, \lambda_d^\dag\, \eta_Q\, \lambda_d 
+		~+~
+		\lambda_e^\dag\, \eta_L\, \lambda_e
+		~-~
+		N_S\, \lambda_u^\dag\, \eta_Q\, \lambda_u
+		~-
+	\right.
+	\\
+% fourth line
+\notag
+	&
+	\qquad\qquad
+	\left.
+		-~
+		N_S\, \lambda_d\, \eta_d\, \lambda_d^\dag
+		~-~
+		\lambda_e\, \eta_e\, \lambda_e^\dag
+		~+~
+		N_S\, \lambda_u\, \eta_u\, \lambda_u^\dag
+	\right]
+	~.
+\end{align}
+
+	Here the RG coefficients are
+%
+% designations of RG coefficients of dimension five operators
+\begin{align}
+\notag
+	A & = \phantom{-}\frac{19~\;}{48\pi^2}  & A_H      & = - \frac{1}{96\pi^2} \\
+\notag
+	G & = \phantom{-}\frac{1}{8\pi^2}     &	G_H 	 & = \phantom{-}
+							\frac{1}{16\pi^2}	\\
+\notag
+	L & = - \frac{1}{48\pi^2}  	      &	L_H 	 & = - \frac{1}{6\pi^2}  \\
+\notag
+	K & = - \frac{5~}{48\pi^2}  	      &	K_H	 & = - \frac{1}{64\pi^2} \\
+\notag
+	Q_{YM} & =
+		- \frac{7}{6\pi^2} 	      &	F_H & = \phantom{-}\frac{1}{4\pi^2} \\
+\notag
+	A^\kappa & = \phantom{-}
+	          \frac{2}{3\pi^2} 	      &   G^\kappa & = - \frac{1}{4\pi^2} 
+	~.
+\end{align}
+	The running couplings are
+%
+% running couplings
+\begin{align}
+\notag
+	\alpha_1 & =        
+			    \frac{5/3\, N_g ~+~ 1/8}
+                                        {6\pi^2}  \\
+\notag
+	\alpha_2 & =    -\, \frac{19 ~-~ 8 N_g}
+		                  {48\pi^2}  \\
+\notag
+	\alpha_3 & =    -\, \frac{5 ~-~4/3\, N_g}
+			         {8\pi^2}~,
+\end{align}
+	where $ N_g = 3 $ is the number of generations.
+	We have used the following notations for the group theoretical
+	factors:
+\begin{align}
+\notag
+	& N_W = ~2 \quad\text{(dim fund SU(2))} &
+		T_W & = \frac{N_W^2 ~-~ 1}
+			       {2 N_W}       
+	\\
+\notag
+	& N_S = ~3 \quad\text{(dim fund SU(3))} &
+		T_S & = \frac{N_S^2 ~-~ 1}
+			       {2 N_S}
+	\\
+\notag
+	& {\rm tr} \left\lgroup T^a T^b \right\rgroup = 
+			~C_1 \delta^{ab} &
+		C_1 & \equiv \frac{1}{2}~.
+\end{align}
+
+	Below the EW symmetry breaking scale, one misses the gauge bosons
+	and the Higgs.
+	Effectively, one has only QED and QCD present.
+	We take a naive ``stepwise'' account for treating mass threshold for quarks,
+	whereby below its mass scale, the corresponding quark is considered
+	to be absent (the same way Higgs and the gauge bosons are).
+	
+	At the EW scale, all SU(2) doublets break up into pairs of particles.
+	So do the LV operators coupled to these doublets --- one now has
+	separate operators for left neutrinos and for left electrons.
+	The boundary condition is that at the EW scale the corresponding LV
+	interactions ``unite'' into doublets:
+\begin{align}
+	&& \eta^L_{(\nu)} \Bigr|_{M_W} ~=~ \eta^L_{(e)} \Bigr|_{M_W} 
+		~=~ \eta_L \Bigr|_{M_W}~,
+	&& \eta^L_{(u)} \Bigr|_{M_W} ~=~ \eta^L_{(d)} \Bigr|_{M_W} 
+		~=~ \eta_Q \Bigr|_{M_W}~.
+\end{align}
+	Righthanded particles of course continue to be independent.
+	The Wilson coefficients are still matrices in the flavor space, but
+	whenever a particle falls out of the spectrum, the corresponding
+	matrices ``lose'' the subspace pertinent to that particle.
+	However, now these matrices are in the mass basis rather than
+	in the gauge basis {\bf (!!Modify the above equation)} ---
+	this is what makes this flavor space ``reduction'' straightforward.
+
+	In the gauge sector, as described in section \ref{SM_3rank}, 
+	one has operators $ \xi_{\rm EM} $ and $ \xi_3 $, where 
+	the former one is defined at the EW scale as
+\[
+	\xi_{\rm EM}\Bigr|_{M_W} ~=~ \xi'\Bigr|_{M_W} \cos^2 \theta_W ~+~ 
+			\xi\Bigr|_{M_W} \sin^2 \theta_W~.
+\]
+	
+
+	
+
+\end{document}
